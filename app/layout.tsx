@@ -1,7 +1,10 @@
-import '../public/style/ReluxCode.scss'
-import '@/public/style/Index.scss'
+import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { Metrika } from '@/app/components/metrica_yandex/metrika';
+import '../public/style/ReluxCode.scss'
+import '@/public/style/Index.scss'
+
 
 export const metadata: Metadata = {
   title: 'Вакансии операторов склада в компании Озон Градус | Карьерный рост и профессиональное развитие ✔️',
@@ -24,7 +27,12 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://example.com"/>
       </head>
-      <body className={myFont.className}>{children}</body>
+      <body className={myFont.className}>
+        {children}
+        <Suspense>
+          <Metrika />
+        </Suspense>
+      </body>
     </html>
   )
 }

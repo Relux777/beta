@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="canonical" href="https://example.com"/>
-        <meta name="yandex-verification" content="933ba147daf41364" />
+        <meta name="yandex-verification" content="768e02ef130f37cb" />
       </head>
       <body className={myFont.className}>
         {children}

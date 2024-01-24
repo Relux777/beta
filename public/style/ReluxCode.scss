@@ -117,6 +117,7 @@ body {
     header a.link span {display: none; }
     section:nth-child(1) .container .text h1 {font-size: 37px !important;}
     .index_content section:nth-child(1) .container {padding-top: 107px;}
+    section:nth-child(2) .transform_top {transform: translateY(-80px);}
 }
 @media (max-width: 450px) {
     section:nth-child(1) .container menu a {width: 43%;}

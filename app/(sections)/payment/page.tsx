@@ -10,7 +10,7 @@ export default function GeneralInfo() {
     <div className='content'>
       <section>
           <div className='container'>
-            3
+            Обновление информации
           </div>
       </section>
     </div>

@@ -4,6 +4,7 @@ import localFont from 'next/font/local'
 import { Metrika } from '@/app/components/metrica_yandex/metrika';
 import '../public/style/ReluxCode.scss'
 import '@/public/style/Index.scss'
+import { Analytics } from '@vercel/analytics/react';
 
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={myFont.className}>
         {children}
         <Suspense>
+          <Analytics />
           <Metrika />
         </Suspense>
       </body>

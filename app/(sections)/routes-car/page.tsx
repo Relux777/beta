@@ -5,7 +5,7 @@ const Map = dynamic(() => import('@/app/components/map/page'), { ssr: false })
 
 
 export const metadata: Metadata = {
-  title: 'Маршруты наших транспортов',
+  title: 'Маршруты',
   description: 'Вся подробная информация о маршрутах.',
 }
 

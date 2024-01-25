@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Озон Грудус - информация о выплатах ',
+  title: 'Оплата',
   description: 'Информация о выплатах в компании Озон Градус за различные участки'
 }
 

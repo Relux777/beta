@@ -41,7 +41,7 @@ export default function Content({
                     </Link>
                     <Link className={`flex block-ozon mr_bt_10 align-center ${pathname === '/sections/page-1' ? 'active' : ''}`} href="/sections/page-1">
                       <div className='ico flex align-center justify-center'><Image src={ozon_table} alt='озон иконка'/></div>
-                      <span>Обновление</span>
+                      <span>Подбор</span>
                     </Link>
                   </menu>
                   </div>

@@ -31,20 +31,16 @@ export default function RootLayout({
         <meta name="robots" content="all" />
         <meta name="googlebot" content="all" />
         <meta property="og:type" content="website">
-
-<meta property="og:url" content="https://www.ozon-gradus.ru/">
-<meta property="og:title" content="Работа на складе OZON - Вакансии операторов склада в компании Озон Градус">
-<meta property="og:description" content="Вакансия работника склада OZON! Компания 'Озон градус' в городе Казань приглашает операторов склада присоединиться к нашей профессиональной команде. Мы являемся ведущей компанией в своей отрасли и предлагаем множество возможностей для развития карьеры и личного профессионального роста.">
-<meta property="og:image" content="https://sun9-78.userapi.com/impg/RvKUInLLcG62G_Ew7f6OYKDRltie6qIDkqdfAw/_SuL6b9ukKM.jpg?size=1280x960&quality=95&sign=80eaa3d3857a35ed6e4c7ccae934828e&c_uniq_tag=w5FL5nveHZauC2ijOWDs37GHiVw2or8vqEdB9x5IS-g&type=album">
-
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://www.ozon-gradus.ru/">
-<meta property="twitter:title" content="Работа на складе OZON - Вакансии операторов склада в компании Озон Градус">
-<meta property="twitter:description" content="Вакансия работника склада OZON! Компания 'Озон градус' в городе Казань приглашает операторов склада присоединиться к нашей профессиональной команде. Мы являемся ведущей компанией в своей отрасли и предлагаем множество возможностей для развития карьеры и личного профессионального роста.">
-<meta property="twitter:image" content="https://sun9-78.userapi.com/impg/RvKUInLLcG62G_Ew7f6OYKDRltie6qIDkqdfAw/_SuL6b9ukKM.jpg?size=1280x960&quality=95&sign=80eaa3d3857a35ed6e4c7ccae934828e&c_uniq_tag=w5FL5nveHZauC2ijOWDs37GHiVw2or8vqEdB9x5IS-g&type=album">
-
-
-
+        <meta property="og:url" content="https://www.ozon-gradus.ru/">
+        <meta property="og:title" content="Работа на складе OZON - Вакансии операторов склада в компании Озон Градус" />
+        <meta
+          property="og:description"
+          content="Вакансия работника склада OZON! Компания 'Озон градус' в городе Казань приглашает операторов склада присоединиться к нашей профессиональной команде. Мы являемся ведущей компанией в своей отрасли и предлагаем множество возможностей для развития карьеры и личного профессионального роста."
+        />
+        <meta
+          property="og:image"
+          content="https://sun9-78.userapi.com/impg/RvKUInLLcG62G_Ew7f6OYKDRltie6qIDkqdfAw/_SuL6b9ukKM.jpg?size=1280x960&quality=95&sign=80eaa3d3857a35ed6e4c7ccae934828e&c_uniq_tag=w5FL5nveHZauC2ijOWDs37GHiVw2or8vqEdB9x5IS-g&type=album"
+        />
       </head>
       <body className={myFont.className}>
         {children}

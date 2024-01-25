@@ -8,7 +8,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 
 export const metadata: Metadata = {
-  title: 'Вакансии операторов склада в компании Озон Градус | Карьерный рост и профессиональное развитие ✔️',
+  title: 'Озон Градус - Вакансии операторов склада в компании, также присутствует карьерный рост и профессиональное развитие ✔️',
   description: 'Компания "Озон градус" в городе Казань приглашает операторов склада присоединиться к нашей профессиональной команде. Мы являемся ведущей компанией в своей отрасли и предлагаем множество возможностей для развития карьеры и личного профессионального роста.',
   
 }
@@ -26,8 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://example.com"/>
-        <meta name="yandex-verification" content="768e02ef130f37cb" />
+        <link rel="canonical" href="https://www.ozon-gradus.ru"/>
+        <meta name="yandex-verification" content="fcaf36d842c7a0ef" />
       </head>
       <body className={myFont.className}>
         {children}

@@ -30,8 +30,8 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.ozon-gradus.ru"/>
         <meta name="robots" content="all" />
         <meta name="googlebot" content="all" />
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.ozon-gradus.ru/">
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ozon-gradus.ru/" />
         <meta property="og:title" content="Работа на складе OZON - Вакансии операторов склада в компании Озон Градус" />
         <meta
           property="og:description"

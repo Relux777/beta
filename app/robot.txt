@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.ozon-gradus.ru/sitemap.xml

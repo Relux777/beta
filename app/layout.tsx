@@ -27,7 +27,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="canonical" href="https://www.ozon-gradus.ru"/>
-        <meta name="yandex-verification" content="fcaf36d842c7a0ef" />
+        <meta name="robots" content="all" />
+        <meta name="googlebot" content="noindex,nofollow" />
       </head>
       <body className={myFont.className}>
         {children}

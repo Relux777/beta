@@ -34,7 +34,7 @@ export default function RootLayout({
 
         <meta name="keywords" content="Работа на складе, Вакансии оператора склада, Озон Градус, Вакансии складской логистики, Казань, Новая тура, Складская работа в Казани, Оператор складской логистики, Работа в ООО Озон Градус в Казани, Озон Градус вакансии, Работа в городе Казань, Присоединяйтесь к команде Озон Градус, Вакансии склада в Казани, Работа на складе в Озон Градус, Вакансии складского работника" />
         <meta name="owner" content="relux.company@mail.ru"/>
-        <meta name="author" lang="ru" content="Ренат Рустамович Плотников"/>
+        <meta name="author" lang="ru" content="Плотников Ренат Рустамович"/>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <meta http-equiv="content-language" content="ru"/>
 

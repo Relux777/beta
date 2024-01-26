@@ -56,12 +56,12 @@ export default function Header() {
       <div className='container flex justify-space align-center'>
       <ul className='flex'>
       <Link className={`link flex justify-space align-center ${pathname === '/' ? 'active' : ''}`} href="/"><span>Главная</span><HomeIcon width='20' height='20' /></Link>
-      <Link className={`link flex justify-space align-center ${pathname === '/sections' ? 'active' : ''}`} href="/sections"><span>Разделы</span><OzonTableIcon width='20' height='20' /></Link>
+      <Link className={`link flex justify-space align-center ${pathname && pathname.includes('/sections') ? 'active' : ''}`} href="/sections"><span>Разделы</span><OzonTableIcon width='20' height='20' /></Link>
       <Link className={`link flex justify-space align-center ${pathname === '/payment' ? 'active' : ''}`} href="/payment"><span>Оплата</span><PayIcon width='20' height='20' /></Link>
       <Link className={`link flex justify-space align-center ${pathname === '/routes-car' ? 'active' : ''}`} href="/routes-car"><span>Маршруты</span><CarIcon width='20' height='20' /></Link>
       </ul>
           <div className='contacts'>
-            <a className='link flex justify-space align-center'><ContactIcon width='20'/>Контакты</a>
+            <div className='link flex justify-space align-center'><ContactIcon width='20'/>Контакты</div>
               <div className='info'>
                 <h3>Свяжитесь с нами</h3>
                   <div className='flex align-center justify-space text_center'>

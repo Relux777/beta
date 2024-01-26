@@ -19,25 +19,16 @@ import photo_16 from '@/public/img/sections/razmeshchenie/photo_16.jpg';
 import photo_17 from '@/public/img/sections/razmeshchenie/photo_17.jpg';
 import photo_18 from '@/public/img/sections/razmeshchenie/photo_18.jpg';
 import photo_19 from '@/public/img/sections/razmeshchenie/photo_19.jpg';
-import photo_20 from '@/public/img/sections/razmeshchenie/photo_20.jpg';
-import photo_21 from '@/public/img/sections/razmeshchenie/photo_21.jpg';
-import photo_22 from '@/public/img/sections/razmeshchenie/photo_22.jpg';
-import photo_23 from '@/public/img/sections/razmeshchenie/photo_23.jpg';
-import photo_24 from '@/public/img/sections/razmeshchenie/photo_24.jpg';
-import photo_25 from '@/public/img/sections/razmeshchenie/photo_25.jpg';
-import photo_26 from '@/public/img/sections/razmeshchenie/photo_26.jpg';
-import photo_27 from '@/public/img/sections/razmeshchenie/photo_27.jpg';
-import photo_28 from '@/public/img/sections/razmeshchenie/photo_28.jpg';
 
 export const metadata: Metadata = {
-  title: 'Размещение',
-  description: 'Работа озон склады г.Казань - памятка Размешение',
+  title: 'Подбор',
+  description: 'Работа озон склады г.Казань - памятка Подбор',
 }
 
 export default function GenerlInfo() {
     return (
       <>
-        <h1>Размещение</h1>
+        <h1>Подбор</h1>
         <div className='text_center img-w50'>
           <Image src={photo_1} alt="Shadow" loading="lazy" />
           <Image src={photo_2} alt="Shadow" loading="lazy" />
@@ -58,15 +49,6 @@ export default function GenerlInfo() {
           <Image src={photo_17} alt="Shadow" loading="lazy" />
           <Image src={photo_18} alt="Shadow" loading="lazy" />
           <Image src={photo_19} alt="Shadow" loading="lazy" />
-          <Image src={photo_20} alt="Shadow" loading="lazy" />
-          <Image src={photo_21} alt="Shadow" loading="lazy" />
-          <Image src={photo_22} alt="Shadow" loading="lazy" />
-          <Image src={photo_23} alt="Shadow" loading="lazy" />
-          <Image src={photo_24} alt="Shadow" loading="lazy" />
-          <Image src={photo_25} alt="Shadow" loading="lazy" />
-          <Image src={photo_26} alt="Shadow" loading="lazy" />
-          <Image src={photo_27} alt="Shadow" loading="lazy" />
-          <Image src={photo_28} alt="Shadow" loading="lazy" />
         </div>
       </>
     )

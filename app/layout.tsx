@@ -38,6 +38,8 @@ export default function RootLayout({
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <meta http-equiv="content-language" content="ru"/>
 
+        <meta name="yandex-verification" content="768e02ef130f37cb" />
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ozon-gradus.ru/" />
         <meta property="og:title" content="Работа на складе OZON - Вакансии операторов склада в компании Озон Градус город Казань / Новая тура" />

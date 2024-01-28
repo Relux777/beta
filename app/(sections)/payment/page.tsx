@@ -38,7 +38,7 @@ export default function GeneralInfo() {
                   <Image src={img_3} alt="ico" className='img-1' width={40}/>
                   <div>
                     <h3>Информация</h3>
-                    <span>Выплаты происходят <b>2</b> раза в месяц на карту через <b>'Мой налог'</b> без учёта налога! Налог 6%</span>
+                    <span>Выплаты происходят <b>2</b> раза в месяц на карту через <b>'Мой налог'</b> без учёта налога!</span>
                   </div>
                 </div>
               </div>
@@ -73,10 +73,10 @@ export default function GeneralInfo() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td className='text_center'> 0 - 70%</td><td className='text_center'>34 ₽</td></tr>
-                    <tr><td className='text_center'>70% - 100%</td><td className='text_center'>37 ₽</td></tr>
-                    <tr><td className='text_center'>100% - 150%</td><td className='text_center'>39 ₽</td></tr>
-                    <tr><td className='text_center'>150% - более</td><td className='text_center'>41 ₽</td></tr>
+                    <tr><td className='text_center'> 0 - 70%</td><td className='text_center'>34 рубля</td></tr>
+                    <tr><td className='text_center'>70% - 100%</td><td className='text_center'>37 рубля</td></tr>
+                    <tr><td className='text_center'>100% - 150%</td><td className='text_center'>39 рубля</td></tr>
+                    <tr><td className='text_center'>150% - более</td><td className='text_center'>41 рубля</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -92,15 +92,15 @@ export default function GeneralInfo() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td>Непрофиль Производство</td><td>2 000 ₽</td></tr>
-                    <tr><td>Непрофиль ОУП</td><td>2 000 ₽</td></tr>
-                    <tr><td>Непрофиль ТМЦ</td><td>2 000 ₽</td></tr>
-                    <tr><td>КроссДок</td><td>2 200 ₽</td></tr>
-                    <tr><td>ЗПХ</td><td>2 300 ₽</td></tr>
-                    <tr><td>Отгрузка без ТСД</td><td>2 400 ₽</td></tr>
-                    <tr><td>Отгрузка с ТСД</td><td>3 000 ₽</td></tr>
-                    <tr><td>ТСЦ</td><td>3 000 ₽</td></tr>
-                    <tr><td>МУС</td><td>3 000 ₽</td></tr>
+                    <tr><td>Непрофиль Производство</td><td>2 000 рублей</td></tr>
+                    <tr><td>Непрофиль ОУП</td><td>2 000 рублей</td></tr>
+                    <tr><td>Непрофиль ТМЦ</td><td>2 000 рублей</td></tr>
+                    <tr><td>КроссДок</td><td>2 200 рублей</td></tr>
+                    <tr><td>ЗПХ</td><td>2 300 рублей</td></tr>
+                    <tr><td>Отгрузка без ТСД</td><td>2 400 рублей</td></tr>
+                    <tr><td>Отгрузка с ТСД</td><td>3 000 рублей</td></tr>
+                    <tr><td>ТСЦ</td><td>3 000 рублей</td></tr>
+                    <tr><td>МУС</td><td>3 000 рублей</td></tr>
                   </tbody>
                 </table>
               </div>

@@ -38,7 +38,7 @@ export default function GeneralInfo() {
                   <Image src={img_3} alt="ico" className='img-1' width={40}/>
                   <div>
                     <h3>Информация</h3>
-                    <span>Выплаты происходят <b>2</b> раза в месяц на карту через <b>'Мой налог'</b> без учёта налога!</span>
+                    <span>Выплаты происходят на карту без учёта налога! Налог составляет <b>6%</b></span>
                   </div>
                 </div>
               </div>

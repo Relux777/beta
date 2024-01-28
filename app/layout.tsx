@@ -2,9 +2,10 @@ import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { Metrika } from '@/app/components/metrica_yandex/metrika';
-import { GoogleAnalytics } from '@next/third-parties/google'
 import '../public/style/ReluxCode.scss'
 import '@/public/style/Index.scss'
+import { Analytics } from '@vercel/analytics/react';
+
 
 export const metadata: Metadata = {
   title: 'Работа на складе OZON - Вакансии операторов склада в компании ооо "Озон Градус" город Казань / Новая тура',
@@ -47,8 +48,8 @@ export default function RootLayout({
       <body className={myFont.className}>
         {children}
         <Suspense>
+          <Analytics />
           <Metrika />
-          <GoogleAnalytics gaId="G-SCSRQ2BJFJ" />
         </Suspense>
       </body>
     </html>

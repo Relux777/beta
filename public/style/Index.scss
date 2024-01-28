@@ -77,6 +77,10 @@ header {
             a {
                 color: #7265d2 !important;
             }
+            .tel {
+                font-size: 16px;
+                margin: 5px 0;  
+            }
         }
     }
 }
@@ -205,6 +209,19 @@ section:nth-child(2) {
             width: 77%;
         }
     }
+}
+
+.non_table {
+    th:nth-child(odd) {
+        text-align: left;
+        width: 70%;
+    }
+}
+.bonus {
+    flex-wrap: nowrap;
+    padding: 15px;
+    img {width: 60px !important;margin-right: 15px;animation-name: none !important;}
+    h3 {margin-top: 0px;margin-bottom: 5px;}
 }
 /* ------------------------------------ animation ------------------------------------ */
 .alert {

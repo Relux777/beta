@@ -65,11 +65,13 @@ export default function Header() {
               <div className='info'>
                 <h3>Свяжитесь с нами</h3>
                   <div className='flex align-center justify-space text_center'>
-                        <div className='w-6 h-6'><a className='contact' href="https://t.me/relux1337" target="_blank" rel="noopener noreferrer"><Image src={telegram} alt="Телеграм" /><span>Телеграм</span></a></div>
-                        <div className='w-6 h-6'><a className='contact' href="https://wa.me/89272333944" target="_blank" rel="noopener noreferrer"><Image src={whatsapp} alt="Whatsapp" /><span>Whatsapp</span></a></div>
-                        <div className='w-6 h-6'><a className='contact' href="https://vk.com/relux1337" target="_blank" rel="noopener noreferrer"><Image src={vk} alt="ВКонтакте" /><span>ВКонтакте</span></a></div>
-                        <div className='w-6 h-6'><a className='contact' href="https://e.mail.ru/compose/?to=relux.company@mail.ru" target="_blank" rel="noopener noreferrer"><Image src={mail} alt="Майл" /><span>Mail.ru</span></a></div>
-                      </div>
+                      <div className='w-6 h-6'><a className='contact' href="https://t.me/relux1337" target="_blank" rel="noopener noreferrer"><Image src={telegram} alt="Телеграм" /><span>Телеграм</span></a></div>
+                      <div className='w-6 h-6'><a className='contact' href="https://wa.me/89272333944" target="_blank" rel="noopener noreferrer"><Image src={whatsapp} alt="Whatsapp" /><span>Whatsapp</span></a></div>
+                      <div className='w-6 h-6'><a className='contact' href="https://vk.com/relux1337" target="_blank" rel="noopener noreferrer"><Image src={vk} alt="ВКонтакте" /><span>ВКонтакте</span></a></div>
+                      <div className='w-6 h-6'><a className='contact' href="https://e.mail.ru/compose/?to=relux.company@mail.ru" target="_blank" rel="noopener noreferrer"><Image src={mail} alt="Майл" /><span>Mail.ru</span></a></div>
+                  </div>
+                  <div>или</div>
+                  <div className='tel'><a href="tel:+79272333944">8 (927) 233-39-44</a></div>
               </div>
             </div>
       </div>

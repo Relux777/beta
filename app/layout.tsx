@@ -27,7 +27,6 @@ export default function RootLayout({
     <html lang="ru">
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://www.ozon-gradus.ru"/>
 
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="all" />

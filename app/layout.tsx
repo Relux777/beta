@@ -29,6 +29,7 @@ export default function RootLayout({
 
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="all" />
+<meta name="google-site-verification" content="25rznoP6S5Uuvc8k9IR6FaMEG7Yj8icY9OqfZz2utx4" />
 
         <meta name="keywords" content="Работа на складе, Вакансии оператора склада, Озон Градус, Вакансии складской логистики, Казань, Новая тура, Складская работа в Казани, Оператор складской логистики, Работа в ООО Озон Градус в Казани, Озон Градус вакансии, Работа в городе Казань, Присоединяйтесь к команде Озон Градус, Вакансии склада в Казани, Работа на складе в Озон Градус, Вакансии складского работника" />
         <meta name="owner" content="relux.company@mail.ru"/>

@@ -51,7 +51,7 @@ export default function GeneralInfo() {
                   <thead>
                     <tr>
                       <th>Кол-во пиков</th>
-                      <th className='text_center'>сумма за процент</th>
+                      <th className='text_center'>сумма за пик</th>
                     </tr>
                   </thead>
                   <tbody>

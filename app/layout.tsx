@@ -5,7 +5,6 @@ import '../public/style/ReluxCode.scss'
 import '@/public/style/Index.scss'
 import { Metrika } from '@/app/components/metrica_yandex/metrika';
 import { Analytics } from '@vercel/analytics/react';
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 export const metadata: Metadata = {
@@ -50,7 +49,6 @@ export default function RootLayout({
         <Suspense>
           <Analytics />
           <Metrika />
-<GoogleAnalytics gaId="G-SCSRQ2BJFJ" />
         </Suspense>
       </body>
     </html>

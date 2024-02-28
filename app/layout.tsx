@@ -8,8 +8,8 @@ import { Analytics } from '@vercel/analytics/react';
 
 
 export const metadata: Metadata = {
-  title: 'Работа на складе OZON - Вакансии операторов склада в компании ооо "Озон Градус" город Казань / Новая тура',
-  description: 'Ищите работу на складе OZON в городе Казань? Компания ооо "Озон Градус" предлагает вакансии операторов склада. Присоединяйтесь к нам и станьте частью команды в городе Казань / Новая тура. Наша вакансия складской логистики ждет вас.',
+  title: 'Работа | Вакансия сотрудником склада OZON  - г. Казань | Новая тура',
+  description: 'Вакансия оператор склада от прямого работадателя. Вахта (15, 30, 45 дней и более) город Казань / Москва. Компания ООО "Озон Градус" - отзывы. Складная логистика',
   
 }
 
@@ -39,8 +39,8 @@ export default function RootLayout({
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ozon-gradus.ru/" />
-        <meta property="og:title" content="Работа на складе OZON - Вакансии операторов склада в компании Озон Градус город Казань / Новая тура" />
-        <meta property="og:description" content="Ищите работу на складе OZON в городе Казань? Компания ооо Озон Градус предлагает вакансии операторов склада. Присоединяйтесь к нам и станьте частью команды в городе Казань / Новая тура. Наша вакансия складской логистики ждет вас." />
+        <meta property="og:title" content="Работа | Вакансия сотрудником склада OZON  - г. Казань | Новая тура" />
+        <meta property="og:description" content="Вакансия оператор склада от прямого работадателя. Вахта (15, 30, 45 дней и более) город Казань / Москва. Компания ООО "Озон Градус" - отзывы. Складная логистика" />
         <meta property="og:image" content="https://sun9-78.userapi.com/impg/RvKUInLLcG62G_Ew7f6OYKDRltie6qIDkqdfAw/_SuL6b9ukKM.jpg?size=1280x960&quality=95&sign=80eaa3d3857a35ed6e4c7ccae934828e&c_uniq_tag=w5FL5nveHZauC2ijOWDs37GHiVw2or8vqEdB9x5IS-g&type=album" />
         <meta name="twitter:card" content="summary_large_image" />
       </head>

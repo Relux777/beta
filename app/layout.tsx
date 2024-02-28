@@ -9,8 +9,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Работа | Вакансия сотрудником склада OZON  - г. Казань | Новая тура',
-  description: 'Вакансия оператор склада от прямого работадателя. Вахта (15, 30, 45 дней и более) город Казань / Москва. Компания ООО "Озон Градус" - отзывы. Складная логистика',
-  
+  description: 'Вакансия оператор склада от прямого работадателя. Вахта (15, 30, 45 дней и более) город Казань / Москва. Компания ООО 'Озон Градус' - отзывы. Складная логистика'
 }
 
 const myFont = localFont({
@@ -40,7 +39,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ozon-gradus.ru/" />
         <meta property="og:title" content="Работа | Вакансия сотрудником склада OZON  - г. Казань | Новая тура" />
-        <meta property="og:description" content="Вакансия оператор склада от прямого работадателя. Вахта (15, 30, 45 дней и более) город Казань / Москва. Компания ООО "Озон Градус" - отзывы. Складная логистика" />
+        <meta property="og:description" content="Вакансия оператор склада от прямого работадателя. Вахта (15, 30, 45 дней и более) город Казань / Москва. Компания ООО 'Озон Градус' - отзывы. Складная логистика" />
         <meta property="og:image" content="https://sun9-78.userapi.com/impg/RvKUInLLcG62G_Ew7f6OYKDRltie6qIDkqdfAw/_SuL6b9ukKM.jpg?size=1280x960&quality=95&sign=80eaa3d3857a35ed6e4c7ccae934828e&c_uniq_tag=w5FL5nveHZauC2ijOWDs37GHiVw2or8vqEdB9x5IS-g&type=album" />
         <meta name="twitter:card" content="summary_large_image" />
       </head>

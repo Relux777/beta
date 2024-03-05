@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Script from 'next/script';
 import React from 'react';
 
-const GoogleAnalytics = () => {
+export function GoogleAnalytics() {
 
   useEffect(() => {
     // Добавление отслеживания Google Analytics
@@ -18,5 +18,3 @@ const GoogleAnalytics = () => {
     <Script src="https://www.googletagmanager.com/gtag/js?id=G-SCSRQ2BJFJ" strategy="afterInteractive" />
   );
 };
-
-export default GoogleAnalytics;

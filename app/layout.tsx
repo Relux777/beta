@@ -1,11 +1,11 @@
-import { Suspense } from 'react'
-import type { Metadata } from 'next'
-import localFont from 'next/font/local'
-import '../public/style/ReluxCode.scss'
-import '@/public/style/Index.scss'
+import { Suspense } from 'react';
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+import '../public/style/ReluxCode.scss';
+import '@/public/style/Index.scss';
 import { Metrika } from '@/app/components/metrica_yandex/metrika';
 
-import { GoogleAnalytics } from '@/app/components/metrica_yandex/GoogleAnalytics";
+import { GoogleAnalytics } from '@/app/components/metrica_yandex/metrica_google";
 
 
 export const metadata: Metadata = {

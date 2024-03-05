@@ -18,4 +18,4 @@ const GoogleAnalytics = () => {
   );
 };
 
-export default GoogleAnalytics;.
+export default GoogleAnalytics;

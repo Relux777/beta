@@ -49,7 +49,7 @@ export default function RootLayout({
         {children}
         <Suspense>
           <Analytics />
-          <MetrikaGoogle />
+          <GoogleAnalytics />
           <Metrika />
         </Suspense>
       </body>

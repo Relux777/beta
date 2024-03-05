@@ -5,7 +5,7 @@ import '../public/style/ReluxCode.scss'
 import '@/public/style/Index.scss'
 import { Metrika } from '@/app/components/metrica_yandex/metrika';
 
-import { GoogleAnalytics } from '@/app/components/metrica_yandex/GoogleAnalytics"
+import { GoogleAnalytics } from '@/app/components/metrica_yandex/GoogleAnalytics";
 
 
 export const metadata: Metadata = {

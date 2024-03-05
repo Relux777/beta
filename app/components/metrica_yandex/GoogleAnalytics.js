@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Script from 'next/script';
+import React from 'react';
 
 const GoogleAnalytics = () => {
 

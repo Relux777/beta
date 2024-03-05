@@ -4,7 +4,7 @@ import localFont from 'next/font/local'
 import '../public/style/ReluxCode.scss'
 import '@/public/style/Index.scss'
 import { Metrika } from '@/app/components/metrica_yandex/metrika';
-import { MetrikaGoogle } from '@/app/components/metrica_yandex/metrika_google';
+import { GoogleAnalytics } from '@/app/components/metrica_yandex/metrika_google';
 import { Analytics } from '@vercel/analytics/react';
 
 

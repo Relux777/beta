@@ -1,29 +1,16 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-class MetrikaGoogle extends Document {
-  render() {
-    return (
-      <Html>
-        <Head>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCSRQ2BJFJ"></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: 
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-SCSRQ2BJFJ');
-              ,
-            }}
-          />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
-  }
+
+"use client";
+
+
+import Script from "next/script";
+
+export function MetrikaGoogle () {
+  return (
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCSRQ2BJFJ"></script>
+
+ <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-SCSRQ2BJFJ'); </script>
+
+  );
 }
-
-export default MetrikaGoogle;

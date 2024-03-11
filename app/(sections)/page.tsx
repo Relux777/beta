@@ -34,14 +34,14 @@ export default function Index() {
             </div>
             <div className='container flex align-center flex-nowrap justify-space'>
                   <div className='text'>
-                      <h1>Вакансия сотрудником склада ozon - г. Казань</h1>
+                      <h1>Работа | вакансия сотрудник склада ozon "градус" - г. Казань</h1>
                       <span>Приглашаем вас присоединиться к команде профессионалов ООО &quot;Озон Градус&quot; </span><br />
                       <span>- ведущую компания в своей отрасли.</span><br />
                       <span>- предоставляем разнообразные возможности для карьерного роста.</span><br />
                       <span>- профессиональное развитие и дружественная рабочая среда. </span>
                   </div>
                   <div className='right-info'>
-                      <Image src={img_1} alt="Shadow" className='img-1' priority />
+                      <Image src={img_1} alt="Работа озон " className='img-1' priority />
                        <div className='shadow'></div>
                     </div>
               </div>

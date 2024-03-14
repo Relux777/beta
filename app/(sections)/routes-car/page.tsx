@@ -5,7 +5,7 @@ const Map = dynamic(() => import('@/app/components/map/page'), { ssr: false })
 
 
 export const metadata: Metadata = {
-  title: 'Маршруты - до склада OZON г. Казань | Новая тура',',
+  title: 'Маршруты - до склада OZON г. Казань | Новая тура',
   description: 'Наши маршруты с Зеленодольск, Волжск, Проспект победы, Яшлек, Салават, Столбище, Максимова. Мы на карте',
 }
 

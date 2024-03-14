@@ -22,8 +22,8 @@ import photo_19 from '@/public/img/sections/krossdok/photo_19.jpg';
 import photo_20 from '@/public/img/sections/krossdok/photo_20.jpg';
 
 export const metadata: Metadata = {
-  title: 'КроссДок',
-  description: 'Работа озон склады г.Казань - памятка КроссДок',
+  title: 'КроссДок - склад OZON  г. Казань | Новая тура',
+  description: 'Памятка - Кросс Док. Работа озон склад г. Казань',
 }
 
 export default function GenerlInfo() {

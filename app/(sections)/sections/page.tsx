@@ -30,8 +30,8 @@ import photo_27 from '@/public/img/sections/razmeshchenie/photo_27.jpg';
 import photo_28 from '@/public/img/sections/razmeshchenie/photo_28.jpg';
 
 export const metadata: Metadata = {
-  title: 'Размещение',
-  description: 'Работа озон склады г.Казань - памятка Размешение',
+  title: 'Размещение - склад OZON  г. Казань | Новая тура',
+  description: 'Памятка размещение. Работа озон склад г. Казань',
 }
 
 export default function GenerlInfo() {

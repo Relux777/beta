@@ -25,8 +25,8 @@ import photo_22 from '@/public/img/sections/otgruzka/photo_22.png';
 import photo_23 from '@/public/img/sections/otgruzka/photo_23.png';
 
 export const metadata: Metadata = {
-  title: 'Отгрузка',
-  description: 'Работа озон склады г.Казань - памятка Отгрузка',
+  title: 'Отгрузка  - склад OZON  г. Казань | Новая тура',
+  description: 'Памятка - Отгрузка. Работа озон склад г. Казань',
 }
 
 export default function GenerlInfo() {

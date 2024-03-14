@@ -5,7 +5,7 @@ import img_2 from '@/public/img/payment/ico_2.svg';
 import img_3 from '@/public/img/payment/ico_3.svg';
 
 export const metadata: Metadata = {
-  title: 'Оплата - сотрудника склада OZON  - г. Казань | Новая тура',',
+  title: 'Оплата - сотрудника склада OZON  - г. Казань | Новая тура',
   description: 'Информация о выплатах на складе в компании Озон Градус г.Казань за различные участки'
 }
 

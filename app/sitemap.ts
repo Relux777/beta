@@ -12,19 +12,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://www.ozon-gradus.ru/sections',
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 1,
     },
     {
       url: 'https://www.ozon-gradus.ru/payment',
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.5,
+      priority: 1,
     },
     {
       url: 'https://www.ozon-gradus.ru/routes-car',
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.5,
+      priority: 1,
+    },
+    {
+      url: 'https://www.ozon-gradus.ru/sections/page-1',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+{
+      url: 'https://www.ozon-gradus.ru/sections/page-2',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+{
+      url: 'https://www.ozon-gradus.ru/sections/page-3',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+{
+      url: 'https://www.ozon-gradus.ru/sections/page-4',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+{
+      url: 'https://www.ozon-gradus.ru/sections/page-5',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
     },
   ]
 }

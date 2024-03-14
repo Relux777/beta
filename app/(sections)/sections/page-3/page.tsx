@@ -29,8 +29,8 @@ import photo_26 from '@/public/img/sections/tsc/photo_26.jpg';
 import photo_27 from '@/public/img/sections/tsc/photo_27.jpg';
 
 export const metadata: Metadata = {
-  title: 'ТСЦ',
-  description: 'Работа озон склады г.Казань - памятка ТСЦ',
+  title: 'ТСЦ  - склад OZON  г. Казань | Новая тура',
+  description: 'Памятка - ТСЦ. Работа озон склад г. Казань',
 }
 
 export default function GenerlInfo() {

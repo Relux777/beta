@@ -34,7 +34,7 @@ export default function Index() {
             </div>
             <div className='container flex align-center flex-nowrap justify-space'>
                   <div className='text'>
-                      <h1>Работа | вакансия сотрудник склада ozon "градус" - г. Казань</h1>
+                      <h1>Работа | вакансия сотрудник склада ozon - г.  Казань</h1>
                       <span>Приглашаем вас присоединиться к команде профессионалов ООО &quot;Озон Градус&quot; </span><br />
                       <span>- ведущую компания в своей отрасли.</span><br />
                       <span>- предоставляем разнообразные возможности для карьерного роста.</span><br />

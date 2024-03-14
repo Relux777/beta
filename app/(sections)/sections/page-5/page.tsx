@@ -21,8 +21,8 @@ import photo_18 from '@/public/img/sections/razmeshchenie/photo_18.jpg';
 import photo_19 from '@/public/img/sections/razmeshchenie/photo_19.jpg';
 
 export const metadata: Metadata = {
-  title: 'Подбор',
-  description: 'Работа озон склады г.Казань - памятка Подбор',
+  title: 'Подбор - склад OZON  г. Казань | Новая тура',
+  description: 'Памятка - Подбор. Работа озон склад г. Казань',
 }
 
 export default function GenerlInfo() {

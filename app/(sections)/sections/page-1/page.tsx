@@ -16,7 +16,7 @@ import photo_13 from '@/public/img/sections/mus/photo_13.jpg';
 import photo_14 from '@/public/img/sections/mus/photo_14.jpg';
 
 export const metadata: Metadata = {
-  title: 'Многоуровневая сортировка (МУС)- склад OZON  г. Казань | Новая тура',
+  title: 'Многоуровневая сортировка (МУС) - склад OZON  г. Казань | Новая тура',
   description: 'Памятка - Многоуровневая сортировка (МУС). Работа озон склад г. Казань',
 }
 

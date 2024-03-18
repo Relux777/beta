@@ -238,7 +238,7 @@ export default function GeneralInfo() {
               </div>
               <div className='w-6'>
                   <div className='block'>
-                    <h1>Наш адресс:</h1>
+                    <h1>Наш адрес:</h1>
                     <span>Респ. Татарстан, р-н Зеленодольский, с. Новая Тура, 19</span> <br /><br />
                     <Map />
                   </div>

@@ -94,7 +94,7 @@ section:nth-child(1) {
         padding-top: 20px;height: inherit;padding-bottom: 65px;
         .text {
             animation-duration: 2.0s;animation-name: text-title;color: #fff;
-            h1 {font-size: 47px;margin-top: 0px;margin-bottom: 20px;}
+            h1 {font-size: 45px;margin-top: 0px;margin-bottom: 20px;}
             span {font-size: 17px;}
         }
         .right-info{animation-duration:1.8s;animation-name:fadeInRightBig}
@@ -222,6 +222,10 @@ section:nth-child(2) {
     padding: 15px;
     img {width: 60px !important;margin-right: 15px;animation-name: none !important;}
     h3 {margin-top: 0px;margin-bottom: 5px;}
+}
+h2 {
+    margin: 0 0 10px;
+    font-size: 25px;
 }
 /* ------------------------------------ animation ------------------------------------ */
 .alert {

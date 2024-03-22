@@ -55,10 +55,10 @@ export default function Header() {
       </div>
       <div className='container flex justify-space align-center'>
       <ul className='flex'>
-      <Link className={`link flex justify-space align-center ${pathname === '/' ? 'active' : ''}`} href="/"><span>Главная</span><HomeIcon width='20' height='20' /></Link>
-      <Link className={`link flex justify-space align-center ${pathname && pathname.includes('/sections') ? 'active' : ''}`} href="/sections"><span>Разделы</span><OzonTableIcon width='20' height='20' /></Link>
-      <Link className={`link flex justify-space align-center ${pathname === '/payment' ? 'active' : ''}`} href="/payment"><span>Оплата</span><PayIcon width='20' height='20' /></Link>
-      <Link className={`link flex justify-space align-center ${pathname === '/routes-car' ? 'active' : ''}`} href="/routes-car"><span>Маршруты</span><CarIcon width='20' height='20' /></Link>
+      <li><Link className={`link flex justify-space align-center ${pathname === '/' ? 'active' : ''}`} href="/"><span>Главная</span><HomeIcon width='20' height='20' /></Link></li>
+      <li><Link className={`link flex justify-space align-center ${pathname && pathname.includes('/sections') ? 'active' : ''}`} href="/sections"><span>Разделы</span><OzonTableIcon width='20' height='20' /></Link></li>
+      <li><Link className={`link flex justify-space align-center ${pathname === '/payment' ? 'active' : ''}`} href="/payment"><span>Оплата</span><PayIcon width='20' height='20' /></Link></li>
+      <li><Link className={`link flex justify-space align-center ${pathname === '/routes-car' ? 'active' : ''}`} href="/routes-car"><span>Маршруты</span><CarIcon width='20' height='20' /></Link></li>
       </ul>
           <div className='contacts'>
             <div className='link flex justify-space align-center'><ContactIcon width='20'/>Контакты</div>

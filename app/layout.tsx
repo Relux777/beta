@@ -3,9 +3,8 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import '../public/style/ReluxCode.scss';
 import '@/public/style/Index.scss';
-import { Metrika } from '@/app/components/metrica_yandex/metrika';
-
-import { GoogleAnalytics } from '@/app/components/metrica_yandex/GoogleAnalytics';
+import { YandexAnalytics } from '@/app/components/metrika/YandexAnalytics';
+import { GoogleAnalytics } from '@/app/components/metrika/GoogleAnalytics';
 
 
 export const metadata: Metadata = {
@@ -34,8 +33,8 @@ export default function RootLayout({
         <meta name="keywords" content="Работа на складе, Вакансии оператора склада, Озон Градус, Вакансии складской логистики, Казань, Новая тура, Складская работа в Казани, Оператор складской логистики, Работа в ООО Озон Градус в Казани, Озон Градус вакансии, Работа в городе Казань, Присоединяйтесь к команде Озон Градус, Вакансии склада в Казани, Работа на складе в Озон Градус, Вакансии складского работника" />
         <meta name="owner" content="relux.company@mail.ru"/>
         <meta name="author" lang="ru" content="Плотников Ренат Рустамович"/>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-        <meta http-equiv="content-language" content="ru"/>
+        <meta httpEquiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta httpEquiv="content-language" content="ru"/>
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ozon-gradus.ru/" />
@@ -48,7 +47,7 @@ export default function RootLayout({
         {children}
         <Suspense>
           <GoogleAnalytics />
-          <Metrika />
+          <YandexAnalytics />
         </Suspense>
       </body>
     </html>

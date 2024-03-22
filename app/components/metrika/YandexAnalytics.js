@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 
-export function Metrika() {
+export function YandexAnalytics() {
   const pathName = usePathname();
   const searchParams = useSearchParams();
   useEffect(() => {

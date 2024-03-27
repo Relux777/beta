@@ -10,12 +10,6 @@ import HomeIcon from '@/app/components/image/Home'
 import OzonTableIcon from '@/app/components/image/OzonTable'
 import PayIcon from '@/app/components/image/Pay'
 import CarIcon from '@/app/components/image/Car'
-import ContactIcon from '@/app/components/image/Contact'
-
-import vk from '@/public/img/index/vk.svg';
-import telegram from '@/public/img/index/telegram.svg';
-import whatsapp from '@/public/img/index/whatsapp.svg';
-import mail from '@/public/img/index/mail.svg';
 
 const Forum = dynamic(() => import('@/app/components/forum/page'), { ssr: false })
 
@@ -60,20 +54,6 @@ export default function Header() {
       <li><Link className={`link flex justify-space align-center ${pathname === '/payment' ? 'active' : ''}`} href="/payment"><span>Оплата</span><PayIcon width='20' height='20' /></Link></li>
       <li><Link className={`link flex justify-space align-center ${pathname === '/routes-car' ? 'active' : ''}`} href="/routes-car"><span>Маршруты</span><CarIcon width='20' height='20' /></Link></li>
       </ul>
-          <div className='contacts'>
-            <div className='link flex justify-space align-center'><ContactIcon width='20'/>Контакты</div>
-              <div className='info'>
-                <h3>Свяжитесь с нами</h3>
-                  <div className='flex align-center justify-space text_center'>
-                      <div className='w-6 h-6'><a className='contact' href="https://t.me/relux1337" target="_blank" rel="noopener noreferrer"><Image src={telegram} alt="Телеграм" /><span>Телеграм</span></a></div>
-                      <div className='w-6 h-6'><a className='contact' href="https://wa.me/89272333944" target="_blank" rel="noopener noreferrer"><Image src={whatsapp} alt="Whatsapp" /><span>Whatsapp</span></a></div>
-                      <div className='w-6 h-6'><a className='contact' href="https://vk.com/relux1337" target="_blank" rel="noopener noreferrer"><Image src={vk} alt="ВКонтакте" /><span>ВКонтакте</span></a></div>
-                      <div className='w-6 h-6'><a className='contact' href="https://e.mail.ru/compose/?to=relux.company@mail.ru" target="_blank" rel="noopener noreferrer"><Image src={mail} alt="Майл" /><span>Mail.ru</span></a></div>
-                  </div>
-                  <div>или</div>
-                  <div className='tel'><a href="tel:+79272333944">8 (927) 233-39-44</a></div>
-              </div>
-            </div>
       </div>
     </header>
   )

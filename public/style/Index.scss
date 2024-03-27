@@ -51,45 +51,13 @@ header {
             background-color: #F3F3F3;
         }
     }
-    .contacts {
-        &:hover {
-            .info {
-                opacity: 1;
-                visibility: visible;
-                transform: translate(0%, 0%);
-            }
-        }
-        .info {
-            position: absolute;
-            width: 340px;
-            right: 0;
-            background: #fff;
-            color: #212529;
-            padding: 10px;
-            border-radius: 4px;
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.1s;
-            transform: translate(-20%, 0%);
-            text-align: center;
-            border: solid 1px #ddd;
-            .contact {margin-bottom: 10px;}
-            a {
-                color: #7265d2 !important;
-            }
-            .tel {
-                font-size: 16px;
-                margin: 5px 0;  
-            }
-        }
-    }
 }
 
 
 /* --- section (1) --- */
 section:nth-child(1) {
-    position: relative;height: clamp(700px, 100vh, 1400px);z-index: 3;
-    &.index_bg {background: linear-gradient(359deg, #0c14d6 25%, #005bff 100%);overflow: hidden;}
+    position: relative;z-index: 3;
+    &.index_bg {background: linear-gradient(359deg, #0c14d6 25%, #005bff 100%);overflow: hidden;height: clamp(700px, 100vh, 1400px);}
     .container {
         padding-top: 20px;height: inherit;padding-bottom: 65px;
         .text {
@@ -110,7 +78,6 @@ section:nth-child(1) {
         }
         > img {transform: translate(5px,0px); transition: transform 0.2s ease-out;}
         }
-        menu {position: sticky;top: 20px;}
         
     }
     .background{
@@ -195,7 +162,6 @@ section:nth-child(2) {
 .contact {
     display: block;
     width: 100%;
-    border: solid 1px #ddd;
     padding: 10px 10px;
     border-radius: 10px;
     img {margin: 0 5px 5px}

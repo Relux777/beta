@@ -20,7 +20,7 @@ export default function GeneralInfo() {
                   <Image src={img_1} alt="ico" className='img-1' width={40}/>
                   <div>
                     <h3>Приведи друга</h3>
-                    <span>Человек, который пришёл от вас и отработал от <b>10</b> смен = <b>3 000</b> рублей вам!</span>
+                    <span>Человек, который пришёл от вас и отработал от <b>10</b> смен = <b>3 000</b>₽ вам!</span>
                   </div>
                 </div>
               </div>

@@ -6,5 +6,23 @@
         position: relative;
         color: #6d5757;
         padding: 0 10px 20px;
+        .logo {
+            font-size: 16px;
+        img {
+            margin-right: 5px;
+        }
     }
+    }
+    ul {
+        li {
+            margin-bottom: 5px;
+            &:nth-child(1) {
+                font-size: 18px;
+                margin: 0px 0px 5px;
+                
+            }
+        }
+    }
+
   } 
+

@@ -123,6 +123,9 @@ body {
     .h-3 {width: 50% !important;margin-bottom: 20px;}
     .h-6 {width: 100% !important;}
     .coll_center {text-align: center; .center {justify-content: space-evenly;}}
+    footer .wave {width: 250% !important;}
+    footer {text-align: center; overflow-x: hidden}
+    footer .logo_2 {justify-content: center;}
 }
 
 @media (max-width: 510px) {

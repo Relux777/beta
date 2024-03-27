@@ -9,12 +9,12 @@ import linewave from '../../../public/img/index/line_wave.svg';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <Image src={linewave}  alt="Line footer wave" height={150} style={{width: '100%',}} priority />
+      <Image className='wave' src={linewave}  alt="Line footer wave" height={150} style={{width: '100%',}} priority />
       <div className={styles.footer_content}>
         <div className='container'>
           <div className='flex'>
             <div className='w-5'>
-              <div className={`${styles.logo} flex`}>
+              <div className={`${styles.logo} logo_2 flex`}>
                 <Image src={Icons} width={20} height={20} alt='Логотип компании Озон'/ >
                 <b className='logo'>Озон Градуc</b>
               </div>

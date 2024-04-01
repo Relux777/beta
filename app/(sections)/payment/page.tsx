@@ -1,8 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
-import img_1 from '@/public/img/payment/ico_1.svg';
-import img_2 from '@/public/img/payment/ico_2.svg';
-import img_3 from '@/public/img/payment/ico_3.svg';
 
 export const metadata: Metadata = {
   title: 'Оплата - сотрудника склада OZON  - г. Казань | Новая тура',
@@ -15,27 +11,27 @@ export default function GeneralInfo() {
       <section>
           <div className='container'>
             <div className='flex'>
-              <div className='w-4'>
-                <div className='block bonus flex'>
-                  <Image src={img_1} alt="ico" className='img-1' width={40}/>
+              <div className='w-4 bonus'>
+                <div className='block flex'>
+                <i className="fa-duotone fa-people-simple"></i>
                   <div>
                     <h3>Приведи друга</h3>
                     <span>Человек, который пришёл от вас и отработал от <b>10</b> смен = <b>3 000</b>₽ вам!</span>
                   </div>
                 </div>
               </div>
-              <div className='w-4'>
+              <div className='w-4 bonus'>
                 <div className='block bonus flex'>
-                  <Image src={img_2} alt="ico" className='img-1' width={40}/>
+                <i className="fa-regular fa-watch"></i>
                   <div>
                     <h3>Быстрая перевахтовка</h3>
                     <span>Если вы перевахтовываетесь за <b>7</b> дней на <b>2</b> вахту вам - <b>3 000</b>₽, на <b>3</b> вахту - <b>4 000</b>₽.</span>
                   </div>
                 </div>
               </div>
-              <div className='w-4'>
+              <div className='w-4 bonus'>
                 <div className='block bonus flex'>
-                  <Image src={img_3} alt="ico" className='img-1' width={40}/>
+                <i className="fa-duotone fa-building-columns"></i>
                   <div>
                     <h3>Информация</h3>
                     <span>Выплаты происходят на карту без учёта налога! Налог составляет <b>6%</b></span>

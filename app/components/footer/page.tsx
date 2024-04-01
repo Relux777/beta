@@ -1,21 +1,23 @@
+'use client'
+import { usePathname } from 'next/navigation'
 import styles from './style.module.scss';
 import Link from 'next/link'
 import Image from 'next/image';
 import Icons from '@/public/favicon.ico';
-import telegram from '@/public/img/index/telegram.svg';
-import whatsapp from '@/public/img/index/whatsapp.svg';
 import linewave from '../../../public/img/index/line_wave.svg';
 
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
-    <footer className={styles.footer}>
-      <Image className='wave' src={linewave}  alt="Line footer wave" height={150} style={{width: '100%',}} priority />
+    <footer className={`${styles.footer} ${pathname === '/' ? styles.index_footer : ''}`}>
+      <Image src={linewave}  alt="Line footer wave" height={0} width={0}  style={{ width: '100%', height: '150px' }} priority />
       <div className={styles.footer_content}>
         <div className='container'>
           <div className='flex'>
             <div className='w-5'>
               <div className={`${styles.logo} logo_2 flex`}>
-                <Image src={Icons} width={20} height={20} alt='Логотип компании Озон'/ >
+                <Image src={Icons} width={26} height={26} alt='Логотип компании Озон'/ >
                 <b className='logo'>Озон Градуc</b>
               </div>
               <div className='info'>
@@ -39,10 +41,9 @@ export default function Footer() {
             <div className='w-2 h-3'>
               <ul>
                 <li>Клиентам</li>
-                <li><a>О компании</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Вопросы и ответы</a></li>
+                <li><a>О компании (обновление)</a></li>
+                <li><a href="#">Новости  (обновление)</a></li>
+                <li><Link href='/routes-car'>Мы на карте</Link></li>
               </ul>
             </div>
             <div className='w-3 h-6 coll_center'>
@@ -54,8 +55,8 @@ export default function Footer() {
               </ul>
               <p>Есть вопросы? Пишите:</p>
              <div className='flex center'>
-                <div><a className='contact' href="https://t.me/relux1337" target="_blank" rel="noopener noreferrer"><Image src={telegram} alt="Телеграм" /><span>Телеграм</span></a></div>
-                <div><a className='contact' href="https://wa.me/89272333944" target="_blank" rel="noopener noreferrer"><Image src={whatsapp} alt="Whatsapp" /><span>Whatsapp</span></a></div>
+                <div><a className='contact flex align-center' href="https://t.me/relux1337" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-telegram"></i><span>Телеграм</span></a></div>
+                <div><a className='contact flex align-center' href="https://wa.me/89272333944" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-whatsapp"></i><span>Whatsapp</span></a></div>
              </div>
             </div>
           </div>

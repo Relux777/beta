@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import '../public/style/ReluxCode.scss';
 import '@/public/style/Index.scss';
+import '@/public/style/all.css';
 import { YandexAnalytics } from '@/app/components/metrika/YandexAnalytics';
 import { GoogleAnalytics } from '@/app/components/metrika/GoogleAnalytics';
 
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 const myFont = localFont({
-  src: '../public/font/gteestiprodisplay_regular.otf',
+  src: '../public/webfonts/gteestiprodisplay_regular.otf',
   display: 'swap',
 })
 

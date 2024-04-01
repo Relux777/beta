@@ -7,9 +7,13 @@ export const metadata: Metadata = {
 
 export default function GeneralInfo() {
     return (
-      <main>
-        Войти
-      </main>
+      <div className='content'>
+        <section>
+          <div className='container'>
+            123
+          </div>
+        </section>
+      </div>
     )
   }
   

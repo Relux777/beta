@@ -13,6 +13,15 @@
     }
 }
 
+@font-face {
+    font-family: "Font Awesome 5 Pro Regular";
+    src: url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.eot");
+    src: url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.svg#Font Awesome 5 Pro Regular")format("svg");
+}
 
 body {
     font-size:13px;font-weight:400;line-height:1.5;margin:0;color:#212529;background: var(--background-color);
@@ -33,6 +42,7 @@ body {
         th:first-child {border-top-left-radius: 0.5rem;border-bottom-left-radius: 0.5rem;text-align: center;width: 130px;}
         th:last-child {border-top-right-radius: 0.5rem;border-bottom-right-radius: 0.5rem;}
     }
+    select {display: block;width: 100%;padding: 14px;border-radius: 4px;border: solid 1px #ddd;margin-bottom: 15px;outline: none;cursor: pointer;}
 
     .modal_bg{position:fixed;opacity:0;visibility:hidden;top:0;bottom:0;background:#00000094;z-index:100;width:100%;left:0;transition:background-color 2s;cursor: pointer;}
     .modal.show .modal_bg{opacity:1;visibility:visible;backdrop-filter: blur(5px);}
@@ -81,6 +91,7 @@ body {
 @media (min-width: 990px) and (max-width: 1200px) {
     .container{max-width:960px}
     section:nth-child(2) .advantages {height: 145px !important;}
+    section:nth-child(3) {padding-bottom: 0px !important}
 }
 
 @media (max-width: 990px) {
@@ -109,6 +120,22 @@ body {
     .h-6 {width: 50% !important;}
     .h-3 {width: 25% !important;}
     footer .info {margin-bottom: 20px;}
+    section:nth-child(3) {padding-bottom: 0px !important}
+    section:nth-child(4) {
+        .img-2 {width: 70% !important;}
+        .users {
+            .w-4 {
+                h2 {margin-bottom: 0 !important;}
+            }
+        }
+    }
+    .contact_index {
+        padding: 60px 40px !important;
+    width: 100% !important;
+    .bg {right: -160px !important;}
+    h2 {max-width: 100% !important;}
+    p {max-width: 100% !important}
+    }
 }
 
 @media (max-width: 770px) {
@@ -116,6 +143,10 @@ body {
     .h-4 {width: 33.33333333% !important;}
     section:nth-child(2) .advantages {margin-bottom: 20px;}
     section:nth-child(1) .container menu a {width: 29%;}
+    section:nth-child(4) .users .best_users {width: 29% !important;}
+    .contact_index {
+    .bg {right: -200px !important;}
+    }
 }
 
 @media (max-width: 580px) {
@@ -126,8 +157,30 @@ body {
     footer .wave {width: 250% !important;}
     footer {text-align: center; overflow-x: hidden}
     footer .logo_2 {justify-content: center;}
+    section:nth-child(4) .users {
+        .best_users {width: 100% !important;
+            margin-bottom: 70px !important;
+        }
+        h2.mr_top_20px {margin-top: -50px !important;}
+    }
+    .best_users {width: 100% !important;
+        margin-bottom: 70px !important;
+    }
 }
-
+@media (max-width: 540px) {
+.contact_index {
+    padding-top: 170px !important;
+    text-align: center;
+    .bg {
+        left: 50%;
+        transform: translate(-50%, -37%);
+        bottom: 0px;
+        top: 0px !important;
+        opacity: 0.8;
+        i {font-size: 140px !important;}
+    }
+}
+}
 @media (max-width: 510px) {
     section:nth-child(1) .container menu a {width: 45%;}
     .img-w50 img {width: 100% !important;}

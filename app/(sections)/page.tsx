@@ -6,22 +6,52 @@ import dynamic from 'next/dynamic';
 const Image = dynamic(() => import('next/image'));
 
 import img_1 from '@/public/img/index/index-1.png';
-import ozon from '@/public/img/index/ozon_sno.jpg'
+import calculator from '@/public/img/index/calculator.jpg';
+import best from '@/public/img/index/best_users/best.jpg';
+import best_users_1 from '@/public/img/index/best_users/renat_plotnikov.jpg';
+
+const New_application = dynamic(() => import('@/app/components/new_application/page'), {loading: () => <p>Loading...</p>,})
+
+const scrollToForm = () => {
+  const formElement = document.querySelector('.form');
+  
+  if (formElement) {
+    formElement.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
 export default function Index() {
   
   const ref = useRef(null);
   const pathname = usePathname()
+  const [totalProfit, setTotalProfit] = useState(0);
 
-  const advantagesData = [
-    { imgSrc: require('@/public/img/index/i_1.svg'), text: 'Стабильные выплаты 2 раза в месяц' },
-    { imgSrc: require('@/public/img/index/i_2.svg'), text: 'Оплачиваемая стажировка 10 дней' },
-    { imgSrc: require('@/public/img/index/i_3.svg'), text: 'Обеспечим жильем и спец.одеждой' },
-    { imgSrc: require('@/public/img/index/i_4.svg'), text: 'Бесплатный комплексный обед за наш счёт' },
-    { imgSrc: require('@/public/img/index/i_5.svg'), text: 'Бесплатный транспoрт дo/c работы' },
-    { imgSrc: require('@/public/img/index/i_6.svg'), text: 'Различные денежные бонусы' }
-  ];
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const numberOfShifts = parseFloat((form.elements.namedItem('numberOfShifts') as HTMLInputElement).value);
+    const averageProduction = parseFloat((form.elements.namedItem('averageProduction') as HTMLInputElement).value);
+  
+    let rate;
+    if (averageProduction <= 69) {
+      rate = 34;
+    } else if (averageProduction >= 70 && averageProduction <= 99) {
+      rate = 37;
+    } else if (averageProduction >= 100 && averageProduction <= 149) {
+      rate = 39;
+    } else {
+      rate = 41;
+    }
+  
+    const total = averageProduction * rate * numberOfShifts;
+  
+    setTotalProfit(total);
+  };
+  
+  const formattedTotalProfit = totalProfit.toLocaleString('ru-RU');
 
+
+  const buttonRef = useRef<HTMLButtonElement>(null);
   return (
     <div className={`content ${pathname === '/' ? 'index_content' : ''}`}>
        <section className='index_bg'>
@@ -35,10 +65,13 @@ export default function Index() {
             <div className='container flex align-center flex-nowrap justify-space'>
                   <div className='text'>
                       <h1>Работа | вакансия сотрудник склада ozon - г.  Казань</h1>
-                      <span>Приглашаем вас присоединиться к команде профессионалов ООО Озон «Градус»</span><br />
-                      <span>- ведущую компания в своей отрасли.</span><br />
-                      <span>- предоставляем разнообразные возможности для карьерного роста.</span><br />
-                      <span>- профессиональное развитие и дружественная рабочая среда. </span>
+                      <ul>
+                        <li>Приглашаем вас присоединиться к команде профессионалов ООО Озон «Градус»</li>
+                        <li>- ведущую компания в своей отрасли</li>
+                        <li>- предоставляем разнообразные возможности для карьерного роста</li>
+                        <li>- профессиональное развитие и дружественная рабочая среда</li>
+                      </ul>
+                      <button className='btn-1' ref={buttonRef} onClick={scrollToForm}>Оставить заявку <i className="fa-light fa-user-pen"></i></button>
                   </div>
                   <div className='right-info'>
                       <Image src={img_1} alt="Работа озон " className='img-1' priority />
@@ -50,14 +83,44 @@ export default function Index() {
           <div className='container'>
             <div className='transform_top flex'>
 
-              {advantagesData.map((advantage, index) => (
-                <div key={index} className='w-2 h-4'>
+            
+                <div className='w-2 h-4'>
                   <div className='advantages'>
-                    <div><Image src={advantage.imgSrc} alt={`${advantage.text}`} loading="lazy" /></div>
-                    <span>{advantage.text}</span>
+                    <i className="fa-light fa-calendar-days"></i>
+                    <span>Выплаты 2 раза в месяц</span>
                   </div>
                 </div>
-              ))}
+                <div className='w-2 h-4'>
+                  <div className='advantages'>
+                    <i className="fa-light fa-credit-card-front"></i>
+                    <span>Оплачиваемая стажировка 10 дней</span>
+                  </div>
+                </div>
+                <div className='w-2 h-4'>
+                  <div className='advantages'>
+                  <i className="fa-light fa-house-user"></i>
+                    <span>Обеспечим жильем и спец.одеждой</span>
+                  </div>
+                </div>
+                <div className='w-2 h-4'>
+                  <div className='advantages'>
+                  <i className="fa-light fa-utensils"></i>
+                    <span>Бесплатный комплексный обед за наш счёт</span>
+                  </div>
+                </div>
+                <div className='w-2 h-4'>
+                  <div className='advantages'>
+                  <i className="fa-light fa-car-bus"></i>
+                    <span>Бесплатный транспoрт дo/c работы</span>
+                  </div>
+                </div>
+                <div className='w-2 h-4'>
+                  <div className='advantages'>
+                  <i className="fa-light fa-gift"></i>
+                    <span>Различные денежные бонусы</span>
+                  </div>
+                </div>
+              
 
             </div>
             <div className='flex mr_bt_down_40'>
@@ -75,7 +138,7 @@ export default function Index() {
                 <div className='block'>
                     <h2>Присоединяйтесь к нашей команде уже сегодня!</h2>
                     <span>Если вы готовы присоединиться к лидерам в своей сфере и построить успешную карьеру в ООО Озон «Градус», ознакомьтесь с нашими актуальными вакансиями и отправьте нам свое резюме. Мы будем рады приветствовать вас в нашей дружной и профессиональной команде.</span>
-                    <br /><br /><Image src={ozon} alt="Озон градус склад Казань" style={{ width: '100%', height: 'auto',  borderRadius: '8px'}} />
+                    
                 </div>
               </div>
               <div className='w-5'>
@@ -94,22 +157,148 @@ export default function Index() {
                   </span>
                 </div>
                 <div className='block'>
-                  <h2>Мы пpедлагаем:</h2>
-                  <span>
-                      - Заpaбoтoк oт 117 000₽ за 30 смен при выполнение 100% нормы! <br />
-                      - Выплаты: 2 раза в меcяц. <br />
-                      - Получение авансов каждую неделю (вахта) <br />
-                      - Грaфик paботы: 2/2, 5/2, 6/1 (день / ночь) <br />
-                      - Вахта 15, 30, 45, 60 дней на ваш выбор<br />
-                      - Бесплатное горячее питание и трансфер <br />
-                      - Берем с гражданством РФ и СНГ <br />
-                      - Подходят и мужчины, и женщины <br />
-                      - Отапливаемый теплый склад класса А+ <br />
-                      - Дополнительные поощрения в виде денежных бонусов
-                  </span>
+                  <ul>
+                    <li><h2>Мы пpедлагаем:</h2></li>
+                    <li>- Заpaбoтoк oт 117 000₽ за 30 смен при выполнение 100% нормы!</li>
+                    <li>- Выплаты: 2 раза в меcяц</li>
+                    <li>- Получение авансов каждую неделю (вахта)</li>
+                    <li>- Грaфик paботы - местные: 2/2, 5/2, 6/1 (день / ночь)</li>
+                    <li>- Грaфик paботы - вахта: 6/1 (день / ночь)</li>
+                    <li>- Бесплатное горячее питание и трансфер</li>
+                    <li>- Берём мужчин, так и женщин</li>
+                    <li>- Отапливаемый теплый склад класса А+</li>
+                    <li>- Дополнительные поощрения в виде денежных бонусов</li>
+                  </ul>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section>
+          <div className='container'>
+            <h2 className='text_center'>Отправь анкету, и мы обязательно ответим в ближайшее время!</h2>
+          <div className='flex'>
+                <div className='w-5'>
+                    <div className='block form'> 
+                        <h2 className='text_center'>Новая заявка</h2>
+                        <New_application />
+                    </div>
+                </div>
+                <div className='w-7'>
+                    <div className='block'>
+                    <h2>Часто задаваемые вопросы</h2>
+                    <div>Происходит обновление информации :(</div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className='container'>
+              <div className='users flex justify-center'>
+                <div className='w-4 text_center'>
+                  <h2>Лучшие по выработке</h2>
+                  <Image src={best} alt="Лучшие в компании ozon gradus" className='img-2' /><br /><br />
+                  <span>Вы поставили новый рекорд? Отпиши нам, мы внесем вас в данный список</span>
+                </div>
+                <div className='w-8'>
+                <h2 className='text_center'>Размещение</h2>
+                <div className='flex justify-center'>
+                <div className='best_users'>
+                    <Image src='/img/index/best_users/r_2.jpg' alt="Лучшие в компании ozon gradus" width={100} height={100} className='img-1' />
+                    <div className='number'><div>1</div></div>
+                    <div className='info'>
+                      <h3>Маруфов Ч.А.</h3>
+                      <b>Выработка: 347%</b>
+                      <hr />
+                      <span>Стаж: более 2 года</span>
+                    </div>
+                  </div>
+                  <div className='best_users'>
+                    <Image src='/img/index/best_users/r_1.jpg' alt="Лучшие в компании ozon gradus" width={100} height={100} className='img-1' />
+                    <div className='number'><div>2</div></div>
+                    <div className='info'>
+                      <h3>Семенов А.В.</h3>
+                      <b>Выработка: 312%</b>
+                      <hr />
+                      <span>Стаж: более 2 года</span>
+                    </div>
+                  </div>
+                  <div className='best_users'>
+                    <Image src='/img/index/best_users/r_3.jpg' alt="Лучшие в компании ozon gradus" width={100} height={100} className='img-1' />
+                    <div className='number'><div>3</div></div>
+                    <div className='info'>
+                      <h3>Евдокимов В.О.</h3>
+                      <b>Выработка: 302%</b>
+                      <hr />
+                      <span>Стаж: 1,5 года</span>
+                    </div>
+                  </div>
+                </div>
+                <h2 className='text_center mr_top_20px'>ТСЦ</h2>
+                <div className='flex justify-center'>
+                  <div className='best_users'>
+                    <Image src='/img/index/best_users/t_1.jpg' alt="Лучшие в компании ozon gradus" width={100} height={100} className='img-1' />
+                    <div className='number'><div>1</div></div>
+                    <div className='info'>
+                      <h3>Эва И.М.</h3>
+                      <b>Выработка: 2 072 пиков</b>
+                      <hr />
+                      <span>Стаж: более 4 мес</span>
+                    </div>
+                  </div>
+                  <div className='best_users'>
+                    <Image src='/img/index/best_users/t_2.jpg' alt="Лучшие в компании ozon gradus" width={100} height={100} className='img-1' />
+                    <div className='number'><div>2</div></div>
+                    <div className='info'>
+                      <h3>Салюкова А.А.</h3>
+                      <b>Выработка: 1 927 пиков</b>
+                      <hr />
+                      <span>Стаж: более 3 мес</span>
+                    </div>
+                  </div>
+                  <div className='best_users'>
+                    <Image src='/img/index/best_users/t_2.jpg' alt="Лучшие в компании ozon gradus" width={100} height={100} className='img-1' />
+                    <div className='number last'><div>3</div></div>
+                    <div className='info'>
+                      <h3>Валишина Н.И.</h3>
+                      <b>Выработка: 1 896 пиков</b>
+                      <hr />
+                      <span>Стаж: более 1 года</span>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <h2 className='text_center'>Расчитайте свою среднюю прибыль</h2>
+              <div className='flex align-center'>
+              
+              <div className='w-6'>
+                  <div className='block calculator'>
+                    <div><div></div></div>
+                    <h2>Калькулятор</h2>
+                    <form onSubmit={handleSubmit}>
+                      <select required>
+                        <option value="1">Размещение</option>
+                      </select>
+                      <input type="number" name="numberOfShifts" placeholder="Кол-во смен" required />
+                      <input type="number" name="averageProduction" placeholder="Средняя выработка %" required />
+                      <button type="submit" className="btn-1">Рассчитать</button>
+                      <h3>Итого: {formattedTotalProfit} рублей</h3>
+                    </form>
+                  </div>
+                </div>
+                <div className='w-6 text_center'>
+                <Image src={calculator} alt="Озон градус склад Казань" loading='lazy' style={{ width: '70%', height: 'auto',  borderRadius: '8px'}} />
+                
+                </div>
+              </div>
+              <div className='contact_index'>
+                <div className='bg bh'><div className='bh'><div className='bh'><i className='fa-brands fa-telegram'></i></div></div></div>
+                <h2>Остались вопросы?</h2>
+                <p>Отпишите нам в телеграм! <br />Мы ответим в ближайшее время</p>
+                <a  href="https://t.me/relux1337" target="_blank" >Отписать</a>
+              </div>
           </div>
         </section>
     </div>

@@ -261,7 +261,7 @@ export default function Index() {
                     <Image src='/img/index/best_users/t_2.jpg' alt="Лучшие в компании ozon gradus" width={100} height={100} className='img-1' />
                     <div className='number last'><div>3</div></div>
                     <div className='info'>
-                      <h3>Валишина Н.И.</h3>
+                      <h3>Валишина Н..Р</h3>
                       <b>Выработка: 1 896 пиков</b>
                       <hr />
                       <span>Стаж: более 1 года</span>

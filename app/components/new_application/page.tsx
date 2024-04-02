@@ -115,7 +115,7 @@ export default function New_application () {
             const message = `Новая заявка!\n\nИмя: ${formData.name}\nФамилия: ${formData.family}\nНомер телефона: ${formData.phoneNumber}\nТелеграм: ${formData.telegram}\nДата рождения: ${formData.date}\nПол: ${formData.floor}\nМетод работы: ${formData.working}`;
             const response = await fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`);
 
-            setAlertText('Данные успешно отправлены в Telegram!');
+            setAlertText('Заявка успешна отправлена!');
             setShowAlert(true);
 
             setTimeout(() => {

@@ -102,7 +102,7 @@ export default function Calculator() {
         </div>
       </div>
       <div>
-        Вся <Link href="/payment/">информация</Link> о выплатах
+        Вся <Link href="/payment/">информация</Link> о ставках
       </div>
     </form>
   );

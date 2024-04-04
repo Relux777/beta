@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+
 import { useRef } from 'react';
 import { usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic';
@@ -8,9 +8,12 @@ const Image = dynamic(() => import('next/image'));
 import img_1 from '@/public/img/index/index-1.png';
 import calculator from '@/public/img/index/calculator.jpg';
 import best from '@/public/img/index/best_users/best.jpg';
-import best_users_1 from '@/public/img/index/best_users/renat_plotnikov.jpg';
 
-const New_application = dynamic(() => import('@/app/components/new_application/page'), {loading: () => <p>Loading...</p>,})
+
+
+const New_application = dynamic(() => import('@/app/components/new_application/page'))
+const Calculator_block = dynamic(() => import('@/app/components/calculator/page'))
+
 
 const scrollToForm = () => {
   const formElement = document.querySelector('.form');
@@ -24,31 +27,8 @@ export default function Index() {
   
   const ref = useRef(null);
   const pathname = usePathname()
-  const [totalProfit, setTotalProfit] = useState(0);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const numberOfShifts = parseFloat((form.elements.namedItem('numberOfShifts') as HTMLInputElement).value);
-    const averageProduction = parseFloat((form.elements.namedItem('averageProduction') as HTMLInputElement).value);
-  
-    let rate;
-    if (averageProduction <= 69) {
-      rate = 34;
-    } else if (averageProduction >= 70 && averageProduction <= 99) {
-      rate = 37;
-    } else if (averageProduction >= 100 && averageProduction <= 149) {
-      rate = 39;
-    } else {
-      rate = 41;
-    }
-  
-    const total = averageProduction * rate * numberOfShifts;
-  
-    setTotalProfit(total);
-  };
-  
-  const formattedTotalProfit = totalProfit.toLocaleString('ru-RU');
+
 
 
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -277,27 +257,21 @@ export default function Index() {
                   <div className='block calculator'>
                     <div><div></div></div>
                     <h2>Калькулятор</h2>
-                    <form onSubmit={handleSubmit}>
-                      <select required>
-                        <option value="1">Размещение</option>
-                      </select>
-                      <input type="number" name="numberOfShifts" placeholder="Кол-во смен" required />
-                      <input type="number" name="averageProduction" placeholder="Средняя выработка %" required />
-                      <button type="submit" className="btn-1">Рассчитать</button>
-                      <h3>Итого: {formattedTotalProfit} рублей</h3>
-                    </form>
+                    <Calculator_block />
                   </div>
                 </div>
                 <div className='w-6 text_center'>
                 <Image src={calculator} alt="Озон градус склад Казань" loading='lazy' style={{ width: '70%', height: 'auto',  borderRadius: '8px'}} />
-                
                 </div>
               </div>
               <div className='contact_index'>
                 <div className='bg bh'><div className='bh'><div className='bh'><i className='fa-brands fa-telegram'></i></div></div></div>
                 <h2>Остались вопросы?</h2>
-                <p>Отпишите нам в телеграм! <br />Мы ответим в ближайшее время</p>
-                <a  href="https://t.me/relux1337" target="_blank" >Отписать</a>
+                <p>Отпишите нам <br />Мы ответим в ближайшее время!</p>
+                <div className='social flex align-center'>
+                <a className='flex align-center' href="https://t.me/relux1337" target="_blank" > <i className="fa-brands fa-telegram"></i></a>
+                <a className='flex align-center' href="https://wa.me/89272333944" target="_blank" > <i className="fa-brands fa-whatsapp"></i></a>
+                </div>
               </div>
           </div>
         </section>

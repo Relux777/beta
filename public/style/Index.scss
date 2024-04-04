@@ -239,11 +239,13 @@ section:nth-child(3) {
         }
             a {    
                 background: #FFF;
-                padding: 16px 40px;
                 border-radius: 100px;
-                display: inline-block;
                 z-index: 100;
                 position: relative;
+                margin-right: 15px;
+                width: 52px;
+                height: 52px;
+                i {font-size: 20px;margin-left: 5px;margin: 0 auto;}
             }
     .bg {
         position: absolute;

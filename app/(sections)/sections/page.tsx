@@ -1,37 +1,48 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import photo_1 from '@/public/img/sections/razmeshchenie/photo_1.jpg';
-import photo_2 from '@/public/img/sections/razmeshchenie/photo_2.jpg';
-import photo_3 from '@/public/img/sections/razmeshchenie/photo_3.jpg';
-import photo_4 from '@/public/img/sections/razmeshchenie/photo_4.jpg';
-import photo_5 from '@/public/img/sections/razmeshchenie/photo_5.jpg';
-import photo_6 from '@/public/img/sections/razmeshchenie/photo_6.jpg';
-import photo_7 from '@/public/img/sections/razmeshchenie/photo_7.jpg';
-import photo_8 from '@/public/img/sections/razmeshchenie/photo_8.jpg';
-import photo_9 from '@/public/img/sections/razmeshchenie/photo_9.jpg';
-import photo_10 from '@/public/img/sections/razmeshchenie/photo_10.jpg';
-import photo_11 from '@/public/img/sections/razmeshchenie/photo_11.jpg';
-import photo_12 from '@/public/img/sections/razmeshchenie/photo_12.jpg';
-import photo_13 from '@/public/img/sections/razmeshchenie/photo_13.jpg';
-import photo_14 from '@/public/img/sections/razmeshchenie/photo_14.jpg';
-import photo_15 from '@/public/img/sections/razmeshchenie/photo_15.jpg';
-import photo_16 from '@/public/img/sections/razmeshchenie/photo_16.jpg';
-import photo_17 from '@/public/img/sections/razmeshchenie/photo_17.jpg';
-import photo_18 from '@/public/img/sections/razmeshchenie/photo_18.jpg';
-import photo_19 from '@/public/img/sections/razmeshchenie/photo_19.jpg';
-import photo_20 from '@/public/img/sections/razmeshchenie/photo_20.jpg';
-import photo_21 from '@/public/img/sections/razmeshchenie/photo_21.jpg';
-import photo_22 from '@/public/img/sections/razmeshchenie/photo_22.jpg';
-import photo_23 from '@/public/img/sections/razmeshchenie/photo_23.jpg';
-import photo_24 from '@/public/img/sections/razmeshchenie/photo_24.jpg';
-import photo_25 from '@/public/img/sections/razmeshchenie/photo_25.jpg';
-import photo_26 from '@/public/img/sections/razmeshchenie/photo_26.jpg';
-import photo_27 from '@/public/img/sections/razmeshchenie/photo_27.jpg';
-import photo_28 from '@/public/img/sections/razmeshchenie/photo_28.jpg';
 
 export const metadata: Metadata = {
   title: 'Размещение - склад OZON  г. Казань | Новая тура',
-  description: 'Памятка размещение. Работа озон склад г. Казань',
+  description: 'Размещение - Подбор. Работа озон склад г. Казань',
+  generator: 'Ozon Gradus',
+  referrer: 'origin-when-cross-origin',
+  metadataBase: new URL('https://ozon-gradus.ru/'),
+  keywords: ['Работа город казань', 'Работа г. Казань', 'Работа г казань склад', 'Работа г. Казань склад', 'Работа Казань склад озон', 'Озон склад', 'Работа озон склад', 'Вакансия озон склад', 'Вакансия озон Казань', 'Работа г Москва склад озон', 'Работа Москва склад', 'Вакансия озон г Москва склад', 'Вакансия вахта Казань', 'Вахта от 15 смен Казань', 'Вахта г Казань', 'Вахта склад Г. Казань'],
+  creator: 'Плотников Ренат Рустамович',
+  openGraph: {
+    title: 'Размещение  - склад OZON  г. Казань | Новая тура',
+    description: 'Размещение - Подбор. Работа озон склад г. Казань',
+    url: 'https://ozon-gradus.ru/sections',
+    siteName: 'ozon-gradus.ru',
+    images: [
+      {
+        url: 'https://sun9-78.userapi.com/impg/RvKUInLLcG62G_Ew7f6OYKDRltie6qIDkqdfAw/_SuL6b9ukKM.jpg?size=1280x960&quality=95&sign=80eaa3d3857a35ed6e4c7ccae934828e&c_uniq_tag=w5FL5nveHZauC2ijOWDs37GHiVw2or8vqEdB9x5IS-g&type=album', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://sun9-78.userapi.com/impg/RvKUInLLcG62G_Ew7f6OYKDRltie6qIDkqdfAw/_SuL6b9ukKM.jpg?size=1280x960&quality=95&sign=80eaa3d3857a35ed6e4c7ccae934828e&c_uniq_tag=w5FL5nveHZauC2ijOWDs37GHiVw2or8vqEdB9x5IS-g&type=album', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Вакансия оператор склада, складная логистика г.Казань озон',
+      },
+    ],
+    locale: 'ru_RU',
+    type: 'website',
+  },
+  alternates: {
+    canonical: '/sections',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function GenerlInfo() {
@@ -39,34 +50,17 @@ export default function GenerlInfo() {
       <>
         <h1>Размещение</h1>
         <div className='text_center img-w50'>
-          <Image src={photo_1} alt="Shadow" loading="lazy" />
-          <Image src={photo_2} alt="Shadow" loading="lazy" />
-          <Image src={photo_3} alt="Shadow" loading="lazy" />
-          <Image src={photo_4} alt="Shadow" loading="lazy" />
-          <Image src={photo_5} alt="Shadow" loading="lazy" />
-          <Image src={photo_6} alt="Shadow" loading="lazy" />
-          <Image src={photo_7} alt="Shadow" loading="lazy" />
-          <Image src={photo_8} alt="Shadow" loading="lazy" />
-          <Image src={photo_9} alt="Shadow" loading="lazy" />
-          <Image src={photo_10} alt="Shadow" loading="lazy" />
-          <Image src={photo_11} alt="Shadow" loading="lazy" />
-          <Image src={photo_12} alt="Shadow" loading="lazy" />
-          <Image src={photo_13} alt="Shadow" loading="lazy" />
-          <Image src={photo_14} alt="Shadow" loading="lazy" />
-          <Image src={photo_15} alt="Shadow" loading="lazy" />
-          <Image src={photo_16} alt="Shadow" loading="lazy" />
-          <Image src={photo_17} alt="Shadow" loading="lazy" />
-          <Image src={photo_18} alt="Shadow" loading="lazy" />
-          <Image src={photo_19} alt="Shadow" loading="lazy" />
-          <Image src={photo_20} alt="Shadow" loading="lazy" />
-          <Image src={photo_21} alt="Shadow" loading="lazy" />
-          <Image src={photo_22} alt="Shadow" loading="lazy" />
-          <Image src={photo_23} alt="Shadow" loading="lazy" />
-          <Image src={photo_24} alt="Shadow" loading="lazy" />
-          <Image src={photo_25} alt="Shadow" loading="lazy" />
-          <Image src={photo_26} alt="Shadow" loading="lazy" />
-          <Image src={photo_27} alt="Shadow" loading="lazy" />
-          <Image src={photo_28} alt="Shadow" loading="lazy" />
+        {Array.from({ length: 28 }, (_, index) => index + 1).map((photoNumber) => (
+          <Image
+            key={photoNumber}
+            src={`/img/sections/razmeshchenie/photo_${photoNumber}.jpg`}
+            width={500}
+            height={500}
+            alt="Подбор фото для сдачи экзамена"
+            {...(photoNumber === 1 ? {} : { priority: false })}
+            {...(photoNumber === 1 ? { loading: 'eager' } : { loading: 'lazy' })}
+          />
+        ))}
         </div>
       </>
     )

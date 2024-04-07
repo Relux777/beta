@@ -1,39 +1,66 @@
-'use client'
-
-import { useRef } from 'react';
-import { usePathname } from 'next/navigation'
+import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 const Image = dynamic(() => import('next/image'));
 
 import img_1 from '@/public/img/index/index-1.png';
 import calculator from '@/public/img/index/calculator.jpg';
 import best from '@/public/img/index/best_users/best.jpg';
+import Script from 'next/script'
 
-
+export const metadata: Metadata = {
+  title: 'Работа | Вакансия сотрудником склада OZON  - г. Казань | Новая тура',
+  description: 'Вакансия оператор склада от прямого работадателя. Вахта (15, 30, 45 дней и более) город Казань / Москва. Компания ООО Озон Градус - отзывы. Складная логистика',
+  generator: 'Ozon Gradus',
+  referrer: 'origin-when-cross-origin',
+  metadataBase: new URL('https://ozon-gradus.ru/'),
+  keywords: ['Работа город казань', 'Работа г. Казань', 'Работа г казань склад', 'Работа г. Казань склад', 'Работа Казань склад озон', 'Озон склад', 'Работа озон склад', 'Вакансия озон склад', 'Вакансия озон Казань', 'Работа г Москва склад озон', 'Работа Москва склад', 'Вакансия озон г Москва склад', 'Вакансия вахта Казань', 'Вахта от 15 смен Казань', 'Вахта г Казань', 'Вахта склад Г. Казань'],
+  creator: 'Плотников Ренат Рустамович',
+  openGraph: {
+    title: 'Работа | Вакансия сотрудником склада OZON  - г. Казань | Новая тура',
+    description: 'Вакансия оператор склада от прямого работадателя. Вахта (15, 30, 45 дней и более) город Казань / Москва. Компания ООО Озон Градус - отзывы. Складная логистика',
+    url: 'https://ozon-gradus.ru/',
+    siteName: 'ozon-gradus.ru',
+    images: [
+      {
+        url: 'https://sun9-78.userapi.com/impg/RvKUInLLcG62G_Ew7f6OYKDRltie6qIDkqdfAw/_SuL6b9ukKM.jpg?size=1280x960&quality=95&sign=80eaa3d3857a35ed6e4c7ccae934828e&c_uniq_tag=w5FL5nveHZauC2ijOWDs37GHiVw2or8vqEdB9x5IS-g&type=album', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://sun9-78.userapi.com/impg/RvKUInLLcG62G_Ew7f6OYKDRltie6qIDkqdfAw/_SuL6b9ukKM.jpg?size=1280x960&quality=95&sign=80eaa3d3857a35ed6e4c7ccae934828e&c_uniq_tag=w5FL5nveHZauC2ijOWDs37GHiVw2or8vqEdB9x5IS-g&type=album', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Работа складная логистика г.Казань озон',
+      },
+    ],
+    locale: 'ru_RU',
+    type: 'website',
+  },
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+}
 
 const New_application = dynamic(() => import('@/app/components/new_application/page'))
 const Calculator_block = dynamic(() => import('@/app/components/calculator/page'))
 
 
-const scrollToForm = () => {
-  const formElement = document.querySelector('.form');
-  
-  if (formElement) {
-    formElement.scrollIntoView({ behavior: 'smooth' });
-  }
-};
+
 
 export default function Index() {
-  
-  const ref = useRef(null);
-  const pathname = usePathname()
 
-
-
-
-  const buttonRef = useRef<HTMLButtonElement>(null);
   return (
-    <div className={`content ${pathname === '/' ? 'index_content' : ''}`}>
+    <div className='content'>
        <section className='index_bg'>
             <div className='background'>
               <div className='cricle circle_1'></div>
@@ -51,7 +78,8 @@ export default function Index() {
                         <li>- предоставляем разнообразные возможности для карьерного роста</li>
                         <li>- профессиональное развитие и дружественная рабочая среда</li>
                       </ul>
-                      <button className='btn-1' ref={buttonRef} onClick={scrollToForm}>Оставить заявку <i className="fa-light fa-user-pen"></i></button>
+                      <button className='btn-1' id="scrollToForm">Оставить заявку <i className="fa-light fa-user-pen"></i></button>
+                      <Script src="script.js" strategy="lazyOnload" />
                   </div>
                   <div className='right-info'>
                       <Image src={img_1} alt="Работа озон " className='img-1' priority />

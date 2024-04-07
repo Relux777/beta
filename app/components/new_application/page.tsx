@@ -152,6 +152,7 @@ export default function New_application () {
                 <option value="">Выберите метод работы</option>
                 <option value="местный персонал">Местный персонал</option>
                 <option value="Вахтовый метод (15 дней)">Вахтовый метод (15 дней)</option>
+                <option value="Вахтовый метод (20 дней)">Вахтовый метод (20 дней)</option>
                 <option value="Вахтовый метод (30 дней)">Вахтовый метод (30 дней)</option>
                 <option value="Вахтовый метод (45 дней)">Вахтовый метод (45 дней)</option>
                 <option value="Вахтовый метод (60 дней)">Вахтовый метод (60 дней)</option>  

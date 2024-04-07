@@ -56,7 +56,7 @@ export default function Footer() {
               <p>Есть вопросы? Пишите:</p>
              <div className='flex center'>
                 <div><a className='contact flex align-center' href="https://t.me/relux1337" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-telegram"></i><span>Телеграм</span></a></div>
-                <div><a className='contact flex align-center' href="https://wa.me/89272333944" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-whatsapp"></i><span>Whatsapp</span></a></div>
+                <div><a className='contact flex align-center' href="https://wa.me/message/HSGCKZ2Y6LF2B1" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-whatsapp"></i><span>Whatsapp</span></a></div>
              </div>
             </div>
           </div>

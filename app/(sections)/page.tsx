@@ -298,7 +298,7 @@ export default function Index() {
                 <p>Отпишите нам <br />Мы ответим в ближайшее время!</p>
                 <div className='social flex align-center'>
                 <a className='flex align-center' href="https://t.me/relux1337" target="_blank" > <i className="fa-brands fa-telegram"></i></a>
-                <a className='flex align-center' href="https://wa.me/89272333944" target="_blank" > <i className="fa-brands fa-whatsapp"></i></a>
+                <a className='flex align-center' href="https://wa.me/message/HSGCKZ2Y6LF2B1" target="_blank" > <i className="fa-brands fa-whatsapp"></i></a>
                 </div>
               </div>
           </div>

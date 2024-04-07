@@ -6,6 +6,7 @@ import img_1 from '@/public/img/index/index-1.png';
 import calculator from '@/public/img/index/calculator.jpg';
 import best from '@/public/img/index/best_users/best.jpg';
 import Script from 'next/script'
+import Accordian from '../components/accordion/page';
 
 export const metadata: Metadata = {
   title: 'Работа | Вакансия сотрудником склада OZON  - г. Казань | Новая тура',
@@ -53,6 +54,7 @@ export const metadata: Metadata = {
 
 const New_application = dynamic(() => import('@/app/components/new_application/page'))
 const Calculator_block = dynamic(() => import('@/app/components/calculator/page'))
+const Accordians = dynamic(() => import('@/app/components/accordion/page'))
 
 
 
@@ -195,7 +197,7 @@ export default function Index() {
                 <div className='w-7'>
                     <div className='block'>
                     <h2>Часто задаваемые вопросы</h2>
-                    <div>Происходит обновление информации :(</div>
+                    <Accordians />
                     </div>
                 </div>
             </div>

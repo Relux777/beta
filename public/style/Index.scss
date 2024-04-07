@@ -214,6 +214,32 @@ section:nth-child(3) {
     
      h2 {color: #393434;}
     }
+    .accordions {
+        .list {
+            margin-bottom: 15px;
+            border: solid 1px #b5b5b5;
+            border-radius: 6px;
+            .title {
+                padding: 15px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover {background: #eeeeee73;}
+            }
+            .body {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 1.0s ease;
+            }
+            .text {padding: 10px;}
+            &.active {
+                .title {background: #eeeeee73;}
+                .body {
+                    max-height: 100px;
+                }
+            }
+        }
+    }
 }
 
 

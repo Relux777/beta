@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import '@/public/style/ReluxCode.scss';
-import '@/public/style/Index.scss';
+import '@/public/style/fontawesome.min.css';
 import '@/public/style/duotone.min.css';
 
 

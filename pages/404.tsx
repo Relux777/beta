@@ -1,4 +1,8 @@
 import Link from 'next/link';
+import '@/public/style/ReluxCode.scss';
+import '@/public/style/Index.scss';
+import '@/public/style/duotone.min.css';
+
 
 export default function Custom404() {
   return (

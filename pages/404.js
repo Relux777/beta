@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function Custom404() {
   return (
-    <div className='not_found'>
-      <i class="fa-duotone fa-circle-exclamation fa-bounce"></i>
+    <div className='not_found' style={{ background: '#000000', color: '#a1a1a1', position: 'fixed', width: '100%', height: '100%', textAlign: 'center', fontSize: '16px', paddingTop: '10%' }}>
+      <i className="fa-duotone fa-circle-exclamation fa-bounce" style={{ fontSize: '140px', color: '#ff7676' }}></i>
       <h1>404 - Страница не найдена</h1>
       <p>Извините, страница, которую вы ищете, не существует.</p>
       <Link href="/">

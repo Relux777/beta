@@ -28,6 +28,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="25rznoP6S5Uuvc8k9IR6FaMEG7Yj8icY9OqfZz2utx4" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6594048679075960"
    crossOrigin="anonymous"></script>
+   <meta name="google-adsense-account" content="ca-pub-6594048679075960"></meta>
       </head>
       <body className={myFont.className}>
         {children}

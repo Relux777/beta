@@ -25,6 +25,7 @@ export default function RootLayout({
     <html lang="ru">
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="google-adsense-account" content="ca-pub-6594048679075960"></meta>
       </head>
       <body className={myFont.className}>
         {children}

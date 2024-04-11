@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic';
-
-const Map = dynamic(() => import('@/app/components/map/page'), { ssr: false })
 
 export const metadata: Metadata = {
   title: 'Маршруты - до склада OZON г. Казань | Новая тура',
-  description: 'Наши маршруты с Зеленодольск, Волжск, Проспект победы, Яшлек, Салават, Столбище, Максимова. Мы на карте',
+  description: 'Маршруты до нашего склада ozon (Зеленодольск, Волжск, Проспект победы, Яшлек, Салават, Столбище, Максимова)',
   generator: 'Ozon Gradus',
   referrer: 'origin-when-cross-origin',
   metadataBase: new URL('https://ozon-gradus.ru/'),
@@ -13,7 +10,7 @@ export const metadata: Metadata = {
   creator: 'Плотников Ренат Рустамович',
   openGraph: {
     title: 'Маршруты - до склада OZON г. Казань | Новая тура',
-    description: 'Наши маршруты с Зеленодольск, Волжск, Проспект победы, Яшлек, Салават, Столбище, Максимова. Мы на карте',
+    description: 'Маршруты до нашего склада ozon (Зеленодольск, Волжск, Проспект победы, Яшлек, Салават, Столбище, Максимова)',
     url: 'https://ozon-gradus.ru/routes-car',
     siteName: 'ozon-gradus.ru',
     images: [
@@ -136,13 +133,11 @@ const data7 = [
 
 export default function GeneralInfo() {
   return (
-    <div className='content'>
-      <section>
-          <div className='container'>
+
             <div className='flex'>
               <div className='w-6'>
                 <div className='block'>
-                <h1>Маршрут № 1 <span>(Зеленодольск - НоваяТура)</span></h1>
+                <h1>1. Зеленодольск - НоваяТура</h1>
                 <table>
                   <thead>
                     <tr>
@@ -161,7 +156,7 @@ export default function GeneralInfo() {
                 </table>
                 </div>
                 <div className='block'>
-                <h1>Маршрут № 2 <span>(Волжск - Зеленодольск - Новая Тура)</span></h1>
+                <h1>2. Волжск - Зеленодольск - Новая Тура</h1>
                 <table>
                   <thead>
                     <tr>
@@ -180,7 +175,7 @@ export default function GeneralInfo() {
                 </table>
                 </div>
                 <div className='block'>
-                <h1>Маршрут № 3 <span>(Казань - Проспект Победы - Новая Тура)</span></h1>
+                <h1>3. Казань - Проспект Победы - Новая Тура</h1>
                 <table>
                   <thead>
                     <tr>
@@ -199,7 +194,7 @@ export default function GeneralInfo() {
                 </table>
                 </div>
                 <div className='block'>
-                <h1>Маршрут № 4 <span>(Казань м Яшлек - Новая Тура)</span></h1>
+                <h1>4. Казань м Яшлек - Новая Тура</h1>
                 <table>
                   <thead>
                     <tr>
@@ -217,8 +212,11 @@ export default function GeneralInfo() {
                   </tbody>
                 </table>
                 </div>
-                <div className='block'>
-                <h1>Маршрут № 5 <span>(Казань Салават - Новая Тура)</span></h1>
+              
+              </div>
+              <div className='w-6'>
+              <div className='block'>
+                <h1>5. Казань Салават - Новая Тура</h1>
                 <table>
                   <thead>
                     <tr>
@@ -237,7 +235,7 @@ export default function GeneralInfo() {
                 </table>
                 </div>
                 <div className='block'>
-                <h1>Маршрут № 6 <span>(Столбище - Новая Тура)</span></h1>
+                <h1>6. Столбище - Новая Тура</h1>
                 <table>
                   <thead>
                     <tr>
@@ -254,8 +252,9 @@ export default function GeneralInfo() {
                     ))}
                   </tbody>
                 </table>
-                </div><div className='block'>
-                <h1>Маршрут № 7 <span>(Максимова - Новая Тура)</span></h1>
+                </div>
+                <div className='block'>
+                <h1>7. Максимова - Новая Тура</h1>
                 <table>
                   <thead>
                     <tr>
@@ -274,32 +273,9 @@ export default function GeneralInfo() {
                 </table>
                 </div>
               </div>
-              <div className='w-6'>
-                  <div className='block'>
-                    <h1>Наш адрес:</h1>
-                    <span>Респ. Татарстан, р-н Зеленодольский, с. Новая Тура, 19</span> <br /><br />
-                    <Map />
-                  </div>
-                  <div className='block'>
-                    <h1>Общественный транспорт</h1>
-                    <span>Для пешехода, если едет со стороны Казани: доезжает на автобусе 117 либо 104 до остановки Рынок Новая Тура. Двигается
-                    параллельно рынку по дороге, по направлению к ФФ. Проходит КПП и спускается вниз (по асфальтной дороге). Здание ФФ
-                    синего цвета. с розовой полоской. Спустившись вниз, кандидат увидит парковку. На ее территории стоит 2х этажное здание,
-                    на нем написано БЮРО ПРОПУСКОВ. Отдел персонала находится на 2ом этаже, кабинет No6.
-                    Для пешехода, если едет со стороны Зеленодольска:
-                    С автовокзала Мирный, автобус No 104, до остановки Рынок Новая тура.</span>
-                  </div>
-                  <div className='block'>
-                    <h1>Собственное авто</h1>
-                    <span>Въезд со стороны трассы М-7. Поворот на Объект 784. Кандидат доезжает до пункта КПП . Звонит в Отдел персонала и
-                    сообщает номер автомобиля. На территории парковки стоит 2х этажное здание, на нем написано БЮРО ПРОПУСКОВ.
-                    Отдел персонала находится на 2ом этаже, кабинет No6.</span>
-                  </div>
-              </div>
             </div>
-          </div>
-      </section>
-    </div>
+
+
   )
   }
   

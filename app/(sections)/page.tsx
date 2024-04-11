@@ -282,7 +282,6 @@ export default function Index() {
               </div>
               <h2 className='text_center'>Расчитайте свою среднюю прибыль</h2>
               <div className='flex align-center'>
-              
               <div className='w-6'>
                   <div className='block calculator'>
                     <div><div></div></div>

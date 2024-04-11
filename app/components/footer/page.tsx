@@ -43,7 +43,7 @@ export default function Footer() {
                 <li>Клиентам</li>
                 <li><a>О компании (обновление)</a></li>
                 <li><a href="#">Новости  (обновление)</a></li>
-                <li><Link href='/routes-car'>Мы на карте</Link></li>
+                <li><Link href='/routes-car/address'>Мы на карте</Link></li>
               </ul>
             </div>
             <div className='w-3 h-6 coll_center'>

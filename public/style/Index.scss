@@ -42,19 +42,6 @@ header {
      
     a, button {color: #fff !important;
     &:hover {color: #fff;}}
-    .forum {
-        >div {margin:0 10px 10px;}
-        input, select {    
-            height: 58px;
-            border: solid 1px #eee;
-            padding: 0px 15px;
-            font-size: 14px;
-            border-radius: 12px;
-            width: 100%;
-            background-color: #F3F3F3;
-            height: 45px;
-        }
-    }
 }
 
 

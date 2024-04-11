@@ -16,11 +16,11 @@ export default function Accordians() {
       return (
         <div className='accordions'>
           <div className='list'>
-            <div className='title flex justify-space align-center' onClick={() => handleClick(0)}><span>Какие документы необходимы для оформления?</span><i className="fa-duotone fa-circle-down fa-bounce"></i></div>
+            <div className='title flex justify-space align-center' onClick={() => handleClick(0)}><span>Необходимые документы для оформления?</span><i className="fa-duotone fa-circle-down fa-bounce"></i></div>
             <div className='body'><div className="text">Паспорт (с пропиской или временной регистрацией на территории РФ)</div></div>
           </div>
           <div className='list'>
-            <div className='title flex justify-space align-center' onClick={() => handleClick(1)}><span>Как часто выплачивается заработная плата?</span><i className="fa-duotone fa-circle-down fa-bounce"></i></div>
+            <div className='title flex justify-space align-center' onClick={() => handleClick(1)}><span>Какие сроки выплаты зарплаты?</span><i className="fa-duotone fa-circle-down fa-bounce"></i></div>
             <div className='body'><div className="text">Заработная плата оплачивается 2 раза в месяц (1, 15 числа)</div></div>
           </div>
           <div className='list'>

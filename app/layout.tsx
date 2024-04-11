@@ -25,6 +25,7 @@ export default function RootLayout({
     <html lang="ru">
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="25rznoP6S5Uuvc8k9IR6FaMEG7Yj8icY9OqfZz2utx4" />
       </head>
       <body className={myFont.className}>
         {children}

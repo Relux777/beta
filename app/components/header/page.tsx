@@ -26,12 +26,14 @@ export default function Header() {
           <Link href='/' className='logo'><Image src='/favicon.ico' width={20} height={20} alt='Логотип компании Озон'/ >ozon градус</Link>
         </div>
         <div className="right flex justify-space align-center">
-              <button className='products'  onClick={openModal}><span>Войти</span> <i className="fa-duotone fa-right-to-bracket"></i></button>
+              <button className='products'  onClick={openModal}><span>г. Казань</span> <i className="fa-duotone fa-location-dot"></i></button>
               <div className={isModalOpen ? 'modal show' : 'modal'}>
               <div className="modal_bg" onClick={closeModal}></div>
               <div className="modal_content">
-                <div className="title">Авторизация</div>
-                В разработке
+                <div className="title">Выберите город</div>
+                <select name="" id="">
+                  <option value="" >Республика татарстан, г. Казань</option>
+                </select>
               </div>
             </div>
         </div>

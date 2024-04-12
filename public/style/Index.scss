@@ -382,7 +382,7 @@ h2 {
     padding: 0 10px;
     margin-bottom: 20px;
     .link{
-        padding: 12px 10px;
+        padding: 12px 10px;    border-bottom: solid 2px #fff0;
         &:hover {border-bottom: solid 2px #7772a3;}
         &.active {
             border-bottom: solid 2px #005bff;

@@ -6,7 +6,6 @@ import img_1 from '@/public/img/index/index-1.png';
 import calculator from '@/public/img/index/calculator.jpg';
 import best from '@/public/img/index/best_users/best.jpg';
 import Script from 'next/script'
-import Accordian from '../components/accordion/page';
 
 export const metadata: Metadata = {
   title: 'Работа | Вакансия сотрудником склада OZON  - г. Казань | Новая тура',
@@ -55,7 +54,7 @@ export const metadata: Metadata = {
 const New_application = dynamic(() => import('@/app/components/new_application/page'))
 const Calculator_block = dynamic(() => import('@/app/components/calculator/page'))
 const Accordians = dynamic(() => import('@/app/components/accordion/page'))
-
+const YandexPartner = dynamic(() => import('@/app/components/yandex/page'))
 
 
 
@@ -92,8 +91,6 @@ export default function Index() {
         <section>
           <div className='container'>
             <div className='transform_top flex'>
-
-            
                 <div className='w-2 h-4'>
                   <div className='advantages'>
                     <i className="fa-light fa-calendar-days"></i>
@@ -130,25 +127,20 @@ export default function Index() {
                     <span>Различные денежные бонусы</span>
                   </div>
                 </div>
-              
-
             </div>
             <div className='flex mr_bt_down_40'>
               <div className='w-7'>
                 <div className='block'>
                     <h2>Вакансии для талантливых специалистов</h2>
-                    <span>Компания ООО Озон «Градус» постоянно в поиске талантливых и целеустремленных людей. Мы предлагаем широкий спектр вакансий в различных областях. Наша компания ценит индивидуальные способности каждого сотрудника и создает комфортные условия для обучения и профессионального роста.</span>
-                    
+                    <p>Компания ООО Озон «Градус» постоянно в поиске талантливых и целеустремленных людей. Мы предлагаем широкий спектр вакансий в различных областях. Наша компания ценит индивидуальные способности каждого сотрудника и создает комфортные условия для обучения и профессионального роста.</p>
                 </div>
                 <div className='block'>
                     <h2>Профессиональное сопровождение</h2>
-                    <span>Наша команда готова предоставить вам поддержку во время всех этапов трудоустройства и в работе. Мы ценим каждого сотрудника и делаем все возможное, чтобы создать благоприятную и эффективную рабочую среду.</span>
-                    
+                    <p>Наша команда готова предоставить вам поддержку во время всех этапов трудоустройства и в работе. Мы ценим каждого сотрудника и делаем все возможное, чтобы создать благоприятную и эффективную рабочую среду.</p>
                 </div>
                 <div className='block'>
                     <h2>Присоединяйтесь к нашей команде уже сегодня!</h2>
-                    <span>Если вы готовы присоединиться к лидерам в своей сфере и построить успешную карьеру в ООО Озон «Градус», ознакомьтесь с нашими актуальными вакансиями и отправьте нам свое резюме. Мы будем рады приветствовать вас в нашей дружной и профессиональной команде.</span>
-                    
+                    <p>Если вы готовы присоединиться к лидерам в своей сфере и построить успешную карьеру в ООО Озон «Градус», ознакомьтесь с нашими актуальными вакансиями и отправьте нам свое резюме. Мы будем рады приветствовать вас в нашей дружной и профессиональной команде.</p>
                 </div>
               </div>
               <div className='w-5'>
@@ -157,18 +149,20 @@ export default function Index() {
               </div>
               <div className='block'>
                   <h2>Вам предстоит:</h2>
-                  <span>
-                      - Пройти обучение, сдать тест <br />
-                      - Приемка, упаковка, сортировка товара <br />
-                      - Выявление бракованных товаров<br />
-                      - Выполнение заданий на ручном терминале сбора данных <br />
-                      - Участие в инвентаризациях и годовых проверках. <br />
-                      - Поддержание чистоты и порядка на складе в конце сменны<br />
-                  </span>
+                  <ul>
+                    <li></li>
+                    <li>- Пройти обучение, сдать тест </li>
+                    <li>- Приемка, упаковка, сортировка товара</li>
+                    <li>- Выявление бракованных товаров</li>
+                    <li>- Выполнение заданий на ручном терминале сбора данных</li>
+                    <li>- Участие в инвентаризациях и годовых проверках. </li>
+                    <li> - Поддержание чистоты и порядка на складе в конце сменны</li>
+                  </ul>
                 </div>
                 <div className='block'>
+                <h2>Мы пpедлагаем:</h2>
                   <ul>
-                    <li><h2>Мы пpедлагаем:</h2></li>
+                    <li></li>
                     <li>- Заpaбoтoк oт 117 000₽ за 30 смен при выполнение 100% нормы!</li>
                     <li>- Выплаты: 2 раза в меcяц</li>
                     <li>- Получение авансов каждую неделю (вахта)</li>
@@ -302,6 +296,7 @@ export default function Index() {
                 <a className='flex align-center' href="https://wa.me/message/HSGCKZ2Y6LF2B1" target="_blank" > <i className="fa-brands fa-whatsapp"></i></a>
                 </div>
               </div>
+              <YandexPartner />
           </div>
         </section>
     </div>

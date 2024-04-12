@@ -26,7 +26,6 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="google-adsense-account" content="ca-pub-6594048679075960"></meta>
-        <script src="https://yandex.ru/ads/system/context.js" async />
       </head>
       <body className={myFont.className}>
         {children}

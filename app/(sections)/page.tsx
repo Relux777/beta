@@ -54,7 +54,6 @@ export const metadata: Metadata = {
 const New_application = dynamic(() => import('@/app/components/new_application/page'))
 const Calculator_block = dynamic(() => import('@/app/components/calculator/page'))
 const Accordians = dynamic(() => import('@/app/components/accordion/page'))
-const YandexPartner = dynamic(() => import('@/app/components/yandex/page'))
 
 
 
@@ -296,7 +295,6 @@ export default function Index() {
                 <a className='flex align-center' href="https://wa.me/message/HSGCKZ2Y6LF2B1" target="_blank" > <i className="fa-brands fa-whatsapp"></i></a>
                 </div>
               </div>
-              <YandexPartner />
           </div>
         </section>
     </div>

@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header className={`${pathname === '/' ? 'index_head' : ''}`}>
-      <div className='container flex justify-space align-center'>
+      <div className='container flex justify-space align-center menu-top'>
         <div className='left flex justify-space align-center'>
           <Link href='/' className='logo'><Image src='/favicon.ico' width={20} height={20} alt='Логотип компании Озон'/ >ozon градус</Link>
         </div>

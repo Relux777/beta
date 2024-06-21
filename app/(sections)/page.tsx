@@ -264,7 +264,7 @@ export default function Index() {
                     </div>
                   </div>
                   <div className='best_users'>
-                    <Image src='/img/index/best_users/t_3.jpg' alt="Лучшие в компании ozon gradus" width={100} height={100} className='img-1' />
+                    <Image src='/img/index/best_users/t_4.jpg' alt="Лучшие в компании ozon gradus" width={100} height={100} className='img-1' />
                     <div className='number last'><div>3</div></div>
                     <div className='info'>
                       <h3>Валишина Н..Р</h3>

@@ -27,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: 'https://www.ozon-gradus.ru/application',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1,
+    },
+    {
       url: 'https://www.ozon-gradus.ru/sections/page-1',
       lastModified: new Date(),
       changeFrequency: 'weekly',

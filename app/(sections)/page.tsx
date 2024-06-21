@@ -196,51 +196,8 @@ export default function Index() {
                     </div>
                 </div>
             </div>
-            <h2 className='text_center'>Последние новости</h2>
-            <div className='flex justify-center'>
-              <div className='w-3'>
-                <div className='news'>
-                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
-                  <div className='info'>
-                  <div className='date'>1 июня 2024 года</div>
-                  <h2>Изменение ставок</h2>
-                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
-                  </div>
-                </div>
-              </div>
-              <div className='w-3'>
-                <div className='news'>
-                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
-                  <div className='info'>
-                  <div className='date'>1 июня 2024 года</div>
-                  <h2>Изменение ставок</h2>
-                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
-                  </div>
-                </div>
-              </div>
-              <div className='w-3'>
-                <div className='news'>
-                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
-                  <div className='info'>
-                  <div className='date'>1 июня 2024 года</div>
-                  <h2>Изменение ставок</h2>
-                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
-                  </div>
-                </div>
-              </div>
-              <div className='w-3'>
-                <div className='news'>
-                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
-                  <div className='info'>
-                  <div className='date'>1 июня 2024 года</div>
-                  <h2>Изменение ставок</h2>
-                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-          <Image src='/img/index/wave.svg' alt="Переход на сайте" width={100} height={100} className='img-2' />
+          <Image src='/img/index/wave.svg' alt="Переход на сайте" width={100} height={100} className='img-2 wave-phone' />
         </section>
         <section>
           <div className='container'>

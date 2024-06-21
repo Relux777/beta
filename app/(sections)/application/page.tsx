@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import dynamic from 'next/dynamic';
-
-const New_application = dynamic(() => import('@/app/components/new_application/page'))
-const Accordians = dynamic(() => import('@/app/components/accordion/page'))
+const Image = dynamic(() => import('next/image'));
+import news from '@/public/img/news/1.jpg';
 
 export const metadata: Metadata = {
   title: 'Новая анкета - Вакансия OZON комплектовщик склада Г.Казань',
@@ -53,20 +52,48 @@ export default function GeneralInfo() {
     <div className='content'>
       <section>
           <div className='container'>
-          <div className="block info text_center"><h1 className="mr_0">Отправь анкету, и мы обязательно ответим в ближайшее время!</h1></div>
-          <div className='flex'>
-                <div className='w-5'>
-                    <div className='block form'> 
-                        <h2 className='text_center'>Новая заявка</h2>
-                        <New_application />
-                    </div>
+          <h2 className='text_center'>Последние новости</h2>
+            <div className='flex justify-center'>
+              <div className='w-3'>
+                <div className='news'>
+                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
+                  <div className='info'>
+                  <div className='date'>1 июня 2024 года</div>
+                  <h2>Изменение ставок</h2>
+                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
+                  </div>
                 </div>
-                <div className='w-7'>
-                    <div className='block'>
-                    <h2>Часто задаваемые вопросы</h2>
-                    <Accordians />
-                    </div>
+              </div>
+              <div className='w-3'>
+                <div className='news'>
+                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
+                  <div className='info'>
+                  <div className='date'>1 июня 2024 года</div>
+                  <h2>Изменение ставок</h2>
+                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
+                  </div>
                 </div>
+              </div>
+              <div className='w-3'>
+                <div className='news'>
+                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
+                  <div className='info'>
+                  <div className='date'>1 июня 2024 года</div>
+                  <h2>Изменение ставок</h2>
+                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
+                  </div>
+                </div>
+              </div>
+              <div className='w-3'>
+                <div className='news'>
+                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
+                  <div className='info'>
+                  <div className='date'>1 июня 2024 года</div>
+                  <h2>Изменение ставок</h2>
+                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
       </section>

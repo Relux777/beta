@@ -42,7 +42,6 @@ export default function Header() {
       <ul className='flex'>
       <li><Link className={`link flex justify-space align-center ${pathname === '/' ? 'active' : ''}`} href="/"><i className="fa-duotone fa-house"></i><span>Главная</span></Link></li>
       <li><Link className={`link flex justify-space align-center ${pathname && pathname.includes('/sections') ? 'active' : ''}`} href="/sections"><i className="fa-duotone fa-folder-open"></i><span>Разделы</span></Link></li>
-      <li><Link className={`link flex justify-space align-center ${pathname === '/application' ? 'active' : ''}`} href="/application"><i className="fa-duotone fa-user-tie"></i><span>Анкета</span></Link></li>
       <li><Link className={`link flex justify-space align-center ${pathname === '/payment' ? 'active' : ''}`} href="/payment"><i className="fa-duotone fa-wallet"></i><span>Оплата</span></Link></li>
       <li><Link className={`link flex justify-space align-center ${pathname && pathname.includes('/routes-car') ? 'active' : ''}`}  href="/routes-car"><i className="fa-duotone fa-car"></i><span>Маршруты</span></Link></li>
       </ul>

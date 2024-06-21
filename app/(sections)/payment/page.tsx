@@ -77,7 +77,7 @@ export default function GeneralInfo() {
                   </div>
                 </div>
               </div>
-              <div class="w-12 bonus"><div class="block bonus flex"><i class="fa-duotone fa-building-columns"></i><div><h3>Информация</h3><span>Выплаты происходят на карту без учёта налога! Налог составляет <b>6%</b></span></div></div></div>
+              <div className="w-12 bonus"><div className="block bonus flex"><i className="fa-duotone fa-building-columns"></i><div><h3>Информация</h3><span>Выплаты происходят на карту без учёта налога! Налог составляет <b>6%</b></span></div></div></div>
               </div>
               <div className='w-6'>
               <div className='block'>

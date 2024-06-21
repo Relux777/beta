@@ -43,7 +43,6 @@ export default function Footer() {
                 <li>Клиентам</li>
                 <li><Link href='/payment'>Бонусы</Link></li>
                 <li><Link href='/routes-car/address'>Мы на карте</Link></li>
-                <li><Link href='/application'>Оставить заявку</Link></li>
               </ul>
             </div>
             <div className='w-3 h-6 coll_center'>

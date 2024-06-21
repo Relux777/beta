@@ -13,16 +13,6 @@
     }
 }
 
-@font-face {
-    font-family: "Font Awesome 5 Pro Regular";
-    src: url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.eot");
-    src: url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/363fb99c06d93ab0b553b029f8b5dfb4.svg#Font Awesome 5 Pro Regular")format("svg");
-}
-
 body {
     font-size:13px;font-weight:400;line-height:1.5;margin:0;color:#212529;background: var(--background-color);
     a{text-decoration:none!important;color:#7265d2;cursor: pointer;transition: 0.2s ease;}
@@ -166,7 +156,37 @@ body {
     .best_users {width: 100% !important;
         margin-bottom: 70px !important;
     }
+    .menu-header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: solid 1px #0000001f;
+        z-index: 10;
+        ul {
+            width: 100%;
+            li {
+                flex: 1 1;
+                position: relative;
+                a {
+                    display: inline-grid;
+                    width: 100%;
+                    justify-content: center !important;
+                    padding: 7px;
+                    color: #99a2ad !important;
+                    height: auto;
+                    i {    
+                        margin: 0 auto 5px;
+                        font-size: 18px;
+                    }
+                    &.active {border-bottom: solid 2px #005bff !important;color: #005bff !important;}
+                }
+            }
+        }
+    }
 }
+
 @media (max-width: 540px) {
 .contact_index {
     padding-top: 170px !important;
@@ -186,7 +206,6 @@ body {
     section:nth-child(1) .container menu a {width: 45%;}
     .img-w50 img {width: 100% !important;}
     .block {padding: 20px 26px !important;}
-    header a.link span {display: none; }
     section:nth-child(1) .container .text h1 {font-size: 37px !important;}
     .index_content section:nth-child(1) .container {padding-top: 107px;}
     section:nth-child(2) .transform_top {transform: translateY(-80px) !important;}

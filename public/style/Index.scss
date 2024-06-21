@@ -4,7 +4,7 @@ header {
     width: 100%;
     color: #fff;
     padding: 10px 0;
-    box-shadow: 10px 0px 10px 1px #00000024;
+    box-shadow: 0px 0px 7px 1px #00000024;
     z-index: 10;
     padding-bottom: 0;
     background: #005bff;
@@ -40,7 +40,7 @@ header {
             i {margin: 0 5px;font-size: 16px;}
         }
      
-    a, button {color: #fff !important;
+    a, button {color: #fff;
     &:hover {color: #fff;}}
 }
 

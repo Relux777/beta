@@ -1,14 +1,13 @@
 import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 const Image = dynamic(() => import('next/image'));
-import Link from 'next/link'
+import Script from 'next/script'
 
 const New_application = dynamic(() => import('@/app/components/new_application/page'))
 const Accordians = dynamic(() => import('@/app/components/accordion/page'))
 
 import img_1 from '@/public/img/index/index-1.png';
 import calculator from '@/public/img/index/calculator.jpg';
-import news from '@/public/img/news/1.jpg';
 import best from '@/public/img/index/best_users/best.jpg';
 
 export const metadata: Metadata = {
@@ -80,7 +79,8 @@ export default function Index() {
                         <li>- предоставляем разнообразные возможности для карьерного роста</li>
                         <li>- профессиональное развитие и дружественная рабочая среда</li>
                       </ul>
-                      <Link href='/application' className='btn-1' id="scrollToForm">Оставить заявку <i className="fa-light fa-user-pen"></i></Link>
+                      <Script src='./script.js' />
+                      <button className='btn-1' id="scrollToForm">Оставить заявку <i className="fa-light fa-user-pen"></i></button>
                   </div>
                   <div className='right-info'>
                       <Image src={img_1} alt="Работа озон " className='img-1' priority />

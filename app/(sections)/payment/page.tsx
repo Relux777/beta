@@ -1,4 +1,8 @@
 import type { Metadata } from 'next'
+import dynamic from 'next/dynamic';
+const Image = dynamic(() => import('next/image'));
+
+import money from '@/public/img/index/money.jpg';
 
 export const metadata: Metadata = {
   title: 'Оплата - сотрудника склада OZON  - г. Казань | Новая тура',
@@ -50,7 +54,12 @@ export default function GeneralInfo() {
       <section>
           <div className='container'>
             <div className='flex'>
-              <div className='w-4 bonus'>
+              
+            </div>
+            <div className='flex'>
+              <div className='w-6'>
+                <h2>Бонусы и Информация</h2>
+              <div className='w-12 bonus'>
                 <div className='block flex'>
                 <i className="fa-duotone fa-people-simple"></i>
                   <div>
@@ -59,7 +68,7 @@ export default function GeneralInfo() {
                   </div>
                 </div>
               </div>
-              <div className='w-4 bonus'>
+              <div className='w-12 bonus'>
                 <div className='block bonus flex'>
                 <i className="fa-regular fa-watch"></i>
                   <div>
@@ -68,36 +77,9 @@ export default function GeneralInfo() {
                   </div>
                 </div>
               </div>
-              <div className='w-4 bonus'>
-                <div className='block bonus flex'>
-                <i className="fa-duotone fa-building-columns"></i>
-                  <div>
-                    <h3>Информация</h3>
-                    <span>Выплаты происходят на карту без учёта налога! Налог составляет <b>6%</b></span>
-                  </div>
-                </div>
+              <div class="w-12 bonus"><div class="block bonus flex"><i class="fa-duotone fa-building-columns"></i><div><h3>Информация</h3><span>Выплаты происходят на карту без учёта налога! Налог составляет <b>6%</b></span></div></div></div>
               </div>
-            </div>
-            <div className='flex'>
-            <div className='w-8'>
-              <div className='block'>
-                <h1>Обновление</h1>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Кол-во пиков</th>
-                      <th className='text_center'>сумма за пик</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td className='text_center'> 0 - 4 000</td><td className='text_center'>60 копеек</td></tr>
-                    <tr><td className='text_center'>4 000 - 6 000</td><td className='text_center'>70 копеек</td></tr>
-                    <tr><td className='text_center'>6 000 - более</td><td className='text_center'>80 копеек</td></tr>
-                  </tbody>
-                </table>
-              </div>
-              </div>
-              <div className='w-4'>
+              <div className='w-6'>
               <div className='block'>
                 <h1>Непрофильные операции</h1>
                 <table className='non_table'>
@@ -118,6 +100,12 @@ export default function GeneralInfo() {
                     <tr><td>ТМЦ</td><td>2 300 рублей</td></tr>       
                   </tbody>
                 </table>
+              </div>
+              </div>
+              <div className='w-12'>
+              <div className='block'>
+                <h1>Операции склада озон</h1>
+                <Image src={money} alt="Работа озон " className='photo-money' priority />
               </div>
               </div>
             </div>

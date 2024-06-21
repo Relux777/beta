@@ -14,6 +14,7 @@ header {
         padding-bottom: 10px;
         .logo {
             font-size: 32px;
+            color: #fff;
             img {height: 30px;
                 width: 30px;
                 margin-right: 7px;
@@ -24,7 +25,7 @@ header {
             border-radius: 8px;
             border: solid 2px #ffffff52;
             background: #00000017;
-            
+            color: #fff;
             margin-left: 15px;
             width: auto;
             &:hover {background: #00000024;}

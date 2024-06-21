@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 const Image = dynamic(() => import('next/image'));
+import Link from 'next/link'
 
 import img_1 from '@/public/img/index/index-1.png';
 import calculator from '@/public/img/index/calculator.jpg';
+import news from '@/public/img/news/1.jpg';
 import best from '@/public/img/index/best_users/best.jpg';
-import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Работа | Вакансия сотрудником склада OZON  - г. Казань | Новая тура',
@@ -51,9 +52,7 @@ export const metadata: Metadata = {
   },
 }
 
-const New_application = dynamic(() => import('@/app/components/new_application/page'))
 const Calculator_block = dynamic(() => import('@/app/components/calculator/page'))
-const Accordians = dynamic(() => import('@/app/components/accordion/page'))
 
 
 
@@ -78,8 +77,7 @@ export default function Index() {
                         <li>- предоставляем разнообразные возможности для карьерного роста</li>
                         <li>- профессиональное развитие и дружественная рабочая среда</li>
                       </ul>
-                      <button className='btn-1' id="scrollToForm">Оставить заявку <i className="fa-light fa-user-pen"></i></button>
-                      <Script src="script.js" strategy="lazyOnload" />
+                      <Link href='/application' className='btn-1' id="scrollToForm">Оставить заявку <i className="fa-light fa-user-pen"></i></Link>
                   </div>
                   <div className='right-info'>
                       <Image src={img_1} alt="Работа озон " className='img-1' priority />
@@ -167,8 +165,9 @@ export default function Index() {
                     <li>- Получение авансов каждую неделю (вахта)</li>
                     <li>- Грaфик paботы - местные: 2/2, 5/2, 6/1 (день / ночь)</li>
                     <li>- Грaфик paботы - вахта: 6/1 (день / ночь)</li>
+                    <li>- Бесплатное жилье в квартире (не хостел)</li>
                     <li>- Бесплатное горячее питание и трансфер</li>
-                    <li>- Берём мужчин, так и женщин</li>
+                    <li>- Берём мужчин, так и женщин (до 45 лет)</li>
                     <li>- Отапливаемый теплый склад класса А+</li>
                     <li>- Дополнительные поощрения в виде денежных бонусов</li>
                   </ul>
@@ -179,22 +178,51 @@ export default function Index() {
         </section>
         <section>
           <div className='container'>
-            <h2 className='text_center'>Отправь анкету, и мы обязательно ответим в ближайшее время!</h2>
-          <div className='flex'>
-                <div className='w-5'>
-                    <div className='block form'> 
-                        <h2 className='text_center'>Новая заявка</h2>
-                        <New_application />
-                    </div>
+            <h2 className='text_center'>Последние новости</h2>
+            <div className='flex justify-center'>
+              <div className='w-3'>
+                <div className='news'>
+                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
+                  <div className='info'>
+                  <div className='date'>1 июня 2024 года</div>
+                  <h2>Изменение ставок</h2>
+                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
+                  </div>
                 </div>
-                <div className='w-7'>
-                    <div className='block'>
-                    <h2>Часто задаваемые вопросы</h2>
-                    <Accordians />
-                    </div>
+              </div>
+              <div className='w-3'>
+                <div className='news'>
+                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
+                  <div className='info'>
+                  <div className='date'>1 июня 2024 года</div>
+                  <h2>Изменение ставок</h2>
+                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
+                  </div>
                 </div>
+              </div>
+              <div className='w-3'>
+                <div className='news'>
+                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
+                  <div className='info'>
+                  <div className='date'>1 июня 2024 года</div>
+                  <h2>Изменение ставок</h2>
+                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
+                  </div>
+                </div>
+              </div>
+              <div className='w-3'>
+                <div className='news'>
+                <Image src={news} alt="Озон градус склад Казань" loading='lazy' style={{ width: '100%', height: 'auto' }} />
+                  <div className='info'>
+                  <div className='date'>1 июня 2024 года</div>
+                  <h2>Изменение ставок</h2>
+                  <div className='text'>С 1 июня стартуют новые ставки (повышение)</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <Image src='/img/index/wave.svg' alt="Переход на сайте" width={100} height={100} className='img-2' />
         </section>
         <section>
           <div className='container'>
@@ -273,7 +301,7 @@ export default function Index() {
                 </div>
                 </div>
               </div>
-              <h2 className='text_center'>Расчитайте свою среднюю прибыль</h2>
+              <h2 className='text_center v2'>Расчитайте свою среднюю прибыль</h2>
               <div className='flex align-center'>
               <div className='w-6'>
                   <div className='block calculator'>

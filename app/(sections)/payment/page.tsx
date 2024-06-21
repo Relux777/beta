@@ -79,9 +79,9 @@ export default function GeneralInfo() {
               </div>
             </div>
             <div className='flex'>
-            <div className='w-4'>
+            <div className='w-8'>
               <div className='block'>
-                <h1>Инвентаризация</h1>
+                <h1>Обновление</h1>
                 <table>
                   <thead>
                     <tr>
@@ -99,25 +99,6 @@ export default function GeneralInfo() {
               </div>
               <div className='w-4'>
               <div className='block'>
-                <h1>Все операции</h1>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Ставки</th>
-                      <th className='text_center'>сумма за процент</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td className='text_center'> 0 - 69%</td><td className='text_center'>34 рубля</td></tr>
-                    <tr><td className='text_center'>70% - 99%</td><td className='text_center'>37 рубля</td></tr>
-                    <tr><td className='text_center'>100% - 149%</td><td className='text_center'>39 рубля</td></tr>
-                    <tr><td className='text_center'>150% - более</td><td className='text_center'>41 рубля</td></tr>
-                  </tbody>
-                </table>
-              </div>
-              </div>
-              <div className='w-4'>
-              <div className='block'>
                 <h1>Непрофильные операции</h1>
                 <table className='non_table'>
                   <thead>
@@ -127,15 +108,14 @@ export default function GeneralInfo() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td>Непрофиль Производство</td><td>2 000 рублей</td></tr>
-                    <tr><td>Непрофиль ОУП</td><td>2 000 рублей</td></tr>
-                    <tr><td>Непрофиль ТМЦ</td><td>2 000 рублей</td></tr>
-                    <tr><td>КроссДок</td><td>2 200 рублей</td></tr>
-                    <tr><td>ЗПХ</td><td>2 300 рублей</td></tr>
-                    <tr><td>Отгрузка без ТСД</td><td>2 400 рублей</td></tr>
-                    <tr><td>Отгрузка с ТСД</td><td>3 000 рублей</td></tr>
-                    <tr><td>ТСЦ</td><td>3 000 рублей</td></tr>
-                    <tr><td>МУС</td><td>3 000 рублей</td></tr>
+                    <tr><td>Стажер (1-4 дня)</td><td>2 500 рублей</td></tr>
+                    <tr><td>Перемещение ОУП</td><td>2 500 рублей</td></tr>
+                    <tr><td>Отгрузка без ТСД</td><td>2 800 рублей</td></tr>
+                    <tr><td>Отгрузка с ТСД</td><td>3 400 рублей</td></tr>
+                    <tr><td>Непрофиль ОУП</td><td>2 200 рублей</td></tr>
+                    <tr><td>Непрофиль производство</td><td>2 200 рублей</td></tr>
+                    <tr><td>Непрофиль ТМЦ</td><td>2 200 рублей</td></tr>
+                    <tr><td>ТМЦ</td><td>2 300 рублей</td></tr>       
                   </tbody>
                 </table>
               </div>

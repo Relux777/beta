@@ -55,11 +55,13 @@ section:nth-child(1) {
         .text {
             animation-duration: 2.0s;animation-name: text-title;color: #fff;font-size: 16px;
             h1 {font-size: 45px;margin-top: 0px;margin-bottom: 20px;}
-            button {    width: auto;
+            a {    width: auto;
                 font-size: 14px;
                 margin-top: 20px;
                 border: solid 2px;
-                background: none;}
+                background: none;
+                display: inline-block;
+            }
         }
         .right-info{animation-duration:1.8s;animation-name:fadeInRightBig}
         .img-1{animation-name:bobbing;animation-duration:2s;animation-iteration-count:infinite;width: 400px;height: auto;}
@@ -125,15 +127,13 @@ section:nth-child(2) {
         position: relative;
         z-index: 3;
     }
-
-    
 }
+
 section:nth-child(4) {
     background-color: #fff;
     padding-bottom: 60px;
+    margin-top: -90px;
      .users {
-        padding-top: 60px;
-        margin-bottom: 50px;
         h2 {
             margin-bottom: 60px;
             &.mr_top_20px {margin-top: 20px;}
@@ -184,53 +184,32 @@ section:nth-child(4) {
         height: auto;
         border-radius: 10px;
      }
-     .calculator {background: #fbfbfb;
-        border: solid 1px #ddd;}
+     .calculator {
+        background: #fbfbfb;
+        border: solid 1px #ddd;
+    }
+    .text_center.v2 {margin: 20px;}
 }
 
 
 section:nth-child(3) {
-    background-image: url(../img/index/phone.png);
-    background-repeat: no-repeat;
-    padding-top: 50px;
-    padding-bottom: 300px;
-    background-size: cover;
+    background: linear-gradient(270deg, #5f4cd5, #005bff);
+    background-size: 600% 600%;
+    -webkit-animation: Phone-index 30s ease infinite;
+    -moz-animation: Phone-index 30s ease infinite;
+    -o-animation: Phone-index 30s ease infinite;
+    animation: Phone-index 30s ease infinite;
+    padding-top: 20px;
     h2 {color: #eee;margin-bottom: 40px;}
     .block {
         box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
     
      h2 {color: #393434;}
     }
-    .accordions {
-        .list {
-            margin-bottom: 15px;
-            border: solid 1px #ddd;
-            border-radius: 6px;
-            .title {
-                padding: 15px;
-                border-radius: 4px;
-                cursor: pointer;
-                transition: all 0.2s;
-                &:hover {background: #eeeeee73;i{    animation-name: fa-bounce;}}
-                i {
-                    font-size: 23px;
-                    color: #005bff;
-                    animation-name: fa-bounce-none;
-                }
-            }
-            .body {
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 1.0s ease;
-            }
-            .text {padding: 10px;}
-            &.active {
-                .title {background: #eeeeee73;}
-                .body {
-                    max-height: 100px;
-                }
-            }
-        }
+    .img-2 {
+        width: 100%;
+        height: 100%;
+        margin-top: -200px;
     }
 }
 
@@ -264,6 +243,7 @@ section:nth-child(3) {
                 margin-right: 15px;
                 width: 52px;
                 height: 52px;
+                z-index: 7;
                 i {font-size: 20px;margin-left: 5px;margin: 0 auto;}
             }
     .bg {
@@ -329,6 +309,12 @@ section:nth-child(3) {
         margin-top: 0px;
         span {font-size: 20px;}
     }
+    &.info {
+        padding: 20px;
+        h1 {
+            font-size: 22px;
+        }
+    }
 }
 .contact {
     padding: 10px 10px;
@@ -389,6 +375,61 @@ h2 {
             border-bottom: solid 2px #005bff;
             color: black;
         }
+    }
+}
+.accordions {
+    .list {
+        margin-bottom: 15px;
+        border: solid 1px #ddd;
+        border-radius: 6px;
+        .title {
+            padding: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            &:hover {background: #eeeeee73;i{    animation-name: fa-bounce;}}
+            i {
+                font-size: 23px;
+                color: #005bff;
+                animation-name: fa-bounce-none;
+            }
+        }
+        .body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.0s ease;
+        }
+        .text {
+            padding: 10px;
+            color: #212529 !important;
+            font-size: 13px !important;
+        }
+        &.active {
+            .title {background: #eeeeee73;}
+            .body {
+                max-height: 100px;
+            }
+        }
+    }
+}
+.news {
+    background-color: #fff;
+    border-radius: 8px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2901960784));
+    img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .info {
+    padding: 10px;
+    h2 {
+        color: black;
+        margin: 0 0 5px;
+        font-size: 19px;
+    }
+    .date {
+        color: #212529;
+    }
     }
 }
 /* ------------------------------------ animation ------------------------------------ */
@@ -485,4 +526,24 @@ h2 {
     100% {
         opacity: 1;
     }
+}
+@-webkit-keyframes Phone-index {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Phone-index {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes Phone-index {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Phone-index {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }

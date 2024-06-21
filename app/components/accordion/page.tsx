@@ -29,7 +29,11 @@ export default function Accordians() {
           </div>
           <div className='list'>
             <div className='title flex justify-space align-center' onClick={() => handleClick(3)}><span>Сколько длится стажировка?</span><i className="fa-duotone fa-circle-down fa-bounce"></i></div>
-            <div className='body'><div className="text">Стажировка начинается после сдачи экзамена, длится она 10 дней. Стажировка оплачиваемая</div></div>
+            <div className='body'><div className="text">Стажировка начинается после сдачи экзамена, длится она 4 дня. Стажировка оплачиваемая</div></div>
+          </div>
+          <div className='list'>
+            <div className='title flex justify-space align-center' onClick={() => handleClick(4)}><span>Есть ли у вас возрастное ограние?</span><i className="fa-duotone fa-circle-down fa-bounce"></i></div>
+            <div className='body'><div className="text">Да, мы берём мужчин, так и женщин (до 45 лет)</div></div>
           </div>
         </div>
         )

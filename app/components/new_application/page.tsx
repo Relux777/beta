@@ -80,12 +80,12 @@ export default function New_application () {
 
         // Отправка уведомления в Telegram
         const telegramBotToken = '6404643817:AAG-Ci3rVBx0IcP3ngLL70CxSzU-kvl4WVo';
-        const chatId = '5544889197';
+        const chatGroupId = '-1002167273158';
 
         try {
 
             const message = `Новая заявка!\n\nИмя: ${formData.name}\nНомер телефона: ${formData.phoneNumber}\nДата рождения: ${formData.date}\nПол: ${formData.floor}\nМетод работы: ${formData.working}`;
-            const response = await fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`);
+            const response = await fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatGroupId}&text=${encodeURIComponent(message)}`);
 
             setAlertText('Заявка успешна отправлена!');
             setShowAlert(true);

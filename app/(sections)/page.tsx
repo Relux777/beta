@@ -3,6 +3,9 @@ import dynamic from 'next/dynamic';
 const Image = dynamic(() => import('next/image'));
 import Link from 'next/link'
 
+const New_application = dynamic(() => import('@/app/components/new_application/page'))
+const Accordians = dynamic(() => import('@/app/components/accordion/page'))
+
 import img_1 from '@/public/img/index/index-1.png';
 import calculator from '@/public/img/index/calculator.jpg';
 import news from '@/public/img/news/1.jpg';
@@ -178,6 +181,21 @@ export default function Index() {
         </section>
         <section>
           <div className='container'>
+          <h2 className='text_center'>Отправь анкету, и мы обязательно ответим в ближайшее время!</h2>
+          <div className='flex'>
+                <div className='w-5'>
+                    <div className='block form'> 
+                        <h2 className='text_center'>Новая заявка</h2>
+                        <New_application />
+                    </div>
+                </div>
+                <div className='w-7'>
+                    <div className='block'>
+                    <h2>Часто задаваемые вопросы</h2>
+                    <Accordians />
+                    </div>
+                </div>
+            </div>
             <h2 className='text_center'>Последние новости</h2>
             <div className='flex justify-center'>
               <div className='w-3'>

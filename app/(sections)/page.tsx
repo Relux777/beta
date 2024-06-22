@@ -72,7 +72,7 @@ export default function Index() {
             </div>
             <div className='container flex align-center flex-nowrap justify-space'>
                   <div className='text'>
-                      <h1>Работа | вакансия сотрудник склада ozon - г.  Казань</h1>
+                      <h1>Работа | вакансия сотрудник склада Ozon - г. Казань</h1>
                       <ul>
                         <li>Приглашаем вас присоединиться к команде профессионалов ООО Озон «Градус»</li>
                         <li>- ведущую компания в своей отрасли</li>
@@ -100,7 +100,7 @@ export default function Index() {
                 <div className='w-2 h-4'>
                   <div className='advantages'>
                     <i className="fa-light fa-credit-card-front"></i>
-                    <span>Оплачиваемая стажировка 10 дней</span>
+                    <span>Оплачиваемая стажировка 4 днея</span>
                   </div>
                 </div>
                 <div className='w-2 h-4'>

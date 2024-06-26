@@ -131,7 +131,7 @@ export default function New_application () {
                 <input type="checkbox" id="horns" name="horns" required />
                 <label htmlFor="horns"> Нажимая на кнопку отправить, я принимаю <Link href='/agreements/'>пользовательское соглашение</Link> и <Link href='/agreements/privacy'>политика конфиденциальности</Link></label>
             </div>
-            <button type="submit" className="btn-1">Записаться на собеседование</button>
+            <button type="submit" className="btn-1">Отправить анкету</button>
             
         </form>
     

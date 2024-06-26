@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   description: 'Памятка - Подбор. Работа озон склад г. Казань',
   generator: 'Ozon Gradus',
   referrer: 'origin-when-cross-origin',
-  metadataBase: new URL('https://ozon-gradus.ru/'),
   keywords: ['Работа город казань', 'Работа г. Казань', 'Работа г казань склад', 'Работа г. Казань склад', 'Работа Казань склад озон', 'Озон склад', 'Работа озон склад', 'Вакансия озон склад', 'Вакансия озон Казань', 'Работа г Москва склад озон', 'Работа Москва склад', 'Вакансия озон г Москва склад', 'Вакансия вахта Казань', 'Вахта от 15 смен Казань', 'Вахта г Казань', 'Вахта склад Г. Казань'],
   creator: 'Плотников Ренат Рустамович',
   openGraph: {
@@ -29,9 +28,6 @@ export const metadata: Metadata = {
     ],
     locale: 'ru_RU',
     type: 'website',
-  },
-  alternates: {
-    canonical: '/sections/page-5',
   },
   robots: {
     index: true,

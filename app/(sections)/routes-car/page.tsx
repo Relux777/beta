@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   description: 'Маршруты до нашего склада ozon (Зеленодольск, Волжск, Проспект победы, Яшлек, Салават, Столбище, Максимова)',
   generator: 'Ozon Gradus',
   referrer: 'origin-when-cross-origin',
-  metadataBase: new URL('https://ozon-gradus.ru/'),
   keywords: ['Работа город казань', 'Работа г. Казань', 'Работа г казань склад', 'Работа г. Казань склад', 'Работа Казань склад озон', 'Озон склад', 'Работа озон склад', 'Вакансия озон склад', 'Вакансия озон Казань', 'Работа г Москва склад озон', 'Работа Москва склад', 'Вакансия озон г Москва склад', 'Вакансия вахта Казань', 'Вахта от 15 смен Казань', 'Вахта г Казань', 'Вахта склад Г. Казань'],
   creator: 'Плотников Ренат Рустамович',
   openGraph: {
@@ -28,9 +27,6 @@ export const metadata: Metadata = {
     ],
     locale: 'ru_RU',
     type: 'website',
-  },
-  alternates: {
-    canonical: '/routes-car',
   },
   robots: {
     index: true,

@@ -96,7 +96,7 @@ export default function Index() {
                 <div className='w-2 h-4'>
                   <div className='advantages'>
                     <i className="fa-light fa-credit-card-front"></i>
-                    <span>Оплачиваемая стажировка 4 днея</span>
+                    <span>Оплачиваемая стажировка 4 дня</span>
                   </div>
                 </div>
                 <div className='w-2 h-4'>

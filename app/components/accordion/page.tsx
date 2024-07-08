@@ -33,7 +33,7 @@ export default function Accordians() {
           </div>
           <div className='list'>
             <div className='title flex justify-space align-center' onClick={() => handleClick(4)}><span>Есть ли у вас возрастное ограние?</span><i className="fa-duotone fa-circle-down fa-bounce"></i></div>
-            <div className='body'><div className="text">Да, мы берём мужчин, так и женщин (до 45 лет)</div></div>
+            <div className='body'><div className="text">Берём мужчин (до 45 лет), так и женщин (до 40 лет)</div></div>
           </div>
         </div>
         )
